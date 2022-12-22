@@ -21,15 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('assets/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    <link href="{{secure_asset('assets/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -76,7 +76,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn fixed-top" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary">
-                <img class="me-" height="48px" src="{{asset('assets/img/logo.png')}}" alt="AMR">
+                <img class="me-" height="48px" src="{{secure_asset('assets/img/logo.png')}}" alt="AMR">
                 <span class="d-inline-block align-middle">AMR</span>
             </h1>
         </a>
@@ -144,19 +144,19 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-1.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-1.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Cardiology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-2.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-2.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Neurology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-3.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-3.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
                         </div>
@@ -174,8 +174,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="{{asset('assets/img/about-1.jpg')}}" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{asset('assets/img/about-2.jpg')}}" alt="" style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-75 align-self-end" src="{{secure_asset('assets/img/about-1.jpg')}}" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{secure_asset('assets/img/about-2.jpg')}}" alt="" style="margin-top: -25%;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -202,7 +202,7 @@
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/pt/ambf.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/ambf.png')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">AMBF</h5>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/pt/delen.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/delen.png')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Delen</h5>
@@ -218,7 +218,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/pt/diakonia.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/diakonia.png')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Diakonia</h5>
@@ -226,7 +226,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/pt/expertise.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/expertise.png')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Expertise France</h5>
@@ -371,7 +371,7 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('assets/img/feature.jpg')}}" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{{secure_asset('assets/img/feature.jpg')}}" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -391,7 +391,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{asset('assets/img/team-1.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('assets/img/team-1.jpg')}}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Nom du membre</h5>
@@ -407,7 +407,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{asset('assets/img/team-2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('assets/img/team-2.jpg')}}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Nom du membre</h5>
@@ -423,7 +423,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{asset('assets/img/team-3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('assets/img/team-3.jpg')}}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Nom du membre</h5>
@@ -439,7 +439,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{asset('assets/img/team-4.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{secure_asset('assets/img/team-4.jpg')}}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>Nom du membre</h5>
@@ -459,7 +459,7 @@
         <div class="container">
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/testimonial-1.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-1.jpg')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -467,7 +467,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/testimonial-2.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-2.jpg')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -475,7 +475,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/testimonial-3.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-3.jpg')}}" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -672,17 +672,17 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('assets/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset('assets/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('assets/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset('assets/lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{asset('assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('assets/lib/tempusdominus/js/moment.min.js')}}"></script>
-    <script src="{{asset('assets/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
-    <script src="{{asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/wow/wow.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/easing/easing.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
+    <script src="{{secure_asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>
