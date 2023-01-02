@@ -21,22 +21,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{secure_asset('assets/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{secure_asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Changement...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -52,13 +52,13 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Lun - Ven : 08H00 - 17H00</small>
+                    <small>Lun - Ven : 07H30 - 17H30 et Sam : 08H00 - 10H30</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>(226) 70-28-56-31 / 78-15-54–36</small>
+                    <small>(226) 73-88-59-09 / 67-36-78-27</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a href="https://facebook.com/profile.php?id=100071054985790" class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -76,7 +76,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn fixed-top" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary">
-                <img class="me-" height="48px" src="{{secure_asset('assets/img/logo.png')}}" alt="AMR">
+                <img class="me-" height="48px" src="{{asset('assets/img/logo.png')}}" alt="AMR">
                 <span class="d-inline-block align-middle">AMR</span>
             </h1>
         </a>
@@ -89,27 +89,31 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Présentation</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="team.html" class="dropdown-item">Actions</a>
+                        <a href="team.html" class="dropdown-item">Visions</a>
+                        <a href="feature.html" class="dropdown-item">Valeurs</a>
                         <a href="feature.html" class="dropdown-item">Missions</a>
-                        <a href="appointment.html" class="dropdown-item">Organisation</a>
-                        <a href="testimonial.html" class="dropdown-item">L’équipe de l’AMR</a>
+                        <a href="feature.html" class="dropdown-item">Objectifs</a>
+                        <a href="feature.html" class="dropdown-item">Organisation</a>
+                        <a href="testimonial.html" class="dropdown-item">Les membres</a>
+                        <a href="appointment.html" class="dropdown-item">Equipe opérationnelle</a>
                     </div>
                 </div>
-                <a href="service.html" class="nav-item nav-link">Nos actions</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Thématiques</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="feature.html" class="dropdown-item">Droits Humains, Gouvernance Locale et Décentralisation</a>
-                        <a href="team.html" class="dropdown-item">Promotion de la Femme et de l’Enfant</a>
-                        <a href="appointment.html" class="dropdown-item">Souverenaité Alimentaire</a>
+                        <a href="feature.html" class="dropdown-item">Droits, cohésion, décentralisation et gouvernance locale</a>
+                        <a href="team.html" class="dropdown-item">promotion, politique, économique, santé </a>
+                        <a href="appointment.html" class="dropdown-item">Systèmes alimentaires durables</a>
                         <a href="testimonial.html" class="dropdown-item">Axes Transversaux</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="about.html" class="nav-item nav-link">À propos</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="service.html" class="nav-item nav-link">Connexion</a>
+
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Devenir Membre<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -119,7 +123,10 @@
     <div class="container-fluid header bg-primary p-0 mb-5">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5">Association Monde Rural</h1>
+                <h1 class="display-4 text-white mb-4">Association Monde Rural</h1>
+                <p class="text-center text-white fw-bold mb-3">L’A.M.R., pour un monde 
+                    Juste, Equitable et Meilleur !
+                    </p>
                 <div class="row g-4">
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
@@ -142,21 +149,34 @@
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="owl-carousel header-carousel">
+                <div class="owl-carousel header-carousel" autoplay="false"
+                >
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-1.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-1.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Cardiology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-2.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-2.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Neurology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{secure_asset('assets/img/carousel-3.jpg')}}" alt="">
+                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel-3.jpg')}}" alt="">
+                        <div class="owl-carousel-text">
+                            <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel/13.jpg')}}" alt="">
+                        <div class="owl-carousel-text">
+                            <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img height="20px" class="img-fluid" src="{{asset('assets/img/carousel/17.jpg')}}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
                         </div>
@@ -174,8 +194,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="{{secure_asset('assets/img/about-1.jpg')}}" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{secure_asset('assets/img/about-2.jpg')}}" alt="" style="margin-top: -25%;">
+                        <img class="img-fluid rounded w-75 align-self-end" src="{{asset('assets/img/about-1.jpg')}}" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{asset('assets/img/about-2.jpg')}}" alt="" style="margin-top: -25%;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -186,7 +206,8 @@
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">En savoir plus</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Devenir un membre</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -202,7 +223,7 @@
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/ambf.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/ambf.png')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">AMBF</h5>
@@ -210,7 +231,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/delen.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/delen.png')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Delen</h5>
@@ -218,7 +239,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/diakonia.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/diakonia.png')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Diakonia</h5>
@@ -226,10 +247,106 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/pt/expertise.png')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/expertise.png')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Expertise France</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/care.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Care</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/chemonics.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Chemonics</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/creative.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">CREATIVE</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/fonaenf.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">FONAENF</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/hunger.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">The Hunger Project</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/idlo.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">IDLO</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/jatur.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">JATUR</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/mondial.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">PAM</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/fao.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">FAO</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/pnud.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">PNUD</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light mx-auto mb-4" src="{{asset('assets/img/pt/proget.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Progettomondo.mlal</h5>
+                        <!--span class="fst-italic">Profession</span-->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid mx-auto mb-4" src="{{asset('assets/img/pt/semus.png')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SEMUS</h5>
                         <!--span class="fst-italic">Profession</span-->
                     </div>
                 </div>
@@ -251,7 +368,7 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="bi bi-people-fill text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Droits Humains, Gouvernance Locale et Décentralisation</h4>
+                        <h4 class="mb-3">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -261,7 +378,7 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Promotion de la Femme et de l’Enfant</h4>
+                        <h4 class="mb-3">La promotion de l’autonomisation politique et économique de la femme et du jeune et la santé de l’enfant</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -271,7 +388,7 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="bi bi-diamond-fill text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Souverenaité Alimentaire</h4>
+                        <h4 class="mb-3">Systèmes alimentaires durables</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -281,7 +398,7 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="bi bi-disc-fill text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Axes Transversaux</h4>
+                        <h4 class="mb-3">Axe transversaux : l’environnement durable et le changement climatique</h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -291,7 +408,8 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-brain text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Erat ipsum </h4>
+                        <h4 class="mb-3">Axe transversaux : le genre, la santé communautaire,
+                        </h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -301,7 +419,8 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-vials text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Erat ipsum</h4>
+                        <h4 class="mb-3">Axe transversaux : le Leaving no one behind (LNOB)
+                        </h4>
                         <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -324,7 +443,7 @@
                             AMR travailler avec et aux côtés des populations burkinabé pour le respect et la protection de leur dignité.
                         </p>
                         <div class="row g-4">
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
                                         <i class="fa fa-user-md text-primary"></i>
@@ -335,7 +454,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
                                         <i class="fa fa-check text-primary"></i>
@@ -346,7 +465,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
                                         <i class="fa fa-comment-medical text-primary"></i>
@@ -357,7 +476,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
                                         <i class="fa fa-headphones text-primary"></i>
@@ -371,9 +490,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                <!--div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="{{secure_asset('assets/img/amr-action.jpg')}}" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('assets/img/amr-action.jpg')}}" style="object-fit: cover;" alt="">
+                    </div>
+                </div-->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="owl-carousel header-carousel" style="max-height: 600px;">
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/1.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/3.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/4.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/14.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/6.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100" src="{{asset('assets/img/carousel/8.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -393,11 +536,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{secure_asset('assets/img/team-1.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/img/team-1.jpg')}}" alt="">
                         </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Nom du membre</h5>
-                            <p class="text-primary">Poste occupé</p>
+                        <div class="team-text bg-light text-center p-2">
+                            <h5 class="fs-6">WANGRE Amadou</h5>
+                            <p class="text-primary fw-bold">Coordonnateur National</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -409,11 +552,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{secure_asset('assets/img/team-2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/img/team-2.jpg')}}" alt="">
                         </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Nom du membre</h5>
-                            <p class="text-primary">Poste occupé</p>
+                        <div class="team-text bg-light text-center p-2">
+                            <h5 class="fs-6">SAMANDOULOUGOU Lockre Célestin</h5>
+                            <p class="text-primary fw-bold">Président du Conseil <br> d’Administration</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -425,11 +568,13 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{secure_asset('assets/img/team-3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/img/team-3.jpg')}}" alt="">
                         </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Nom du membre</h5>
-                            <p class="text-primary">Poste occupé</p>
+                        <div class="team-text bg-light text-center p-2">
+                            <h5 class="fs-6">Kiemde Abdoul Aziz</h5>
+                            <p class="text-primary fw-bold">
+                                Coordonnateur Provincial du Zondoma
+                            </p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -441,11 +586,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{secure_asset('assets/img/team-4.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('assets/img/team-4.jpg')}}" alt="">
                         </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Nom du membre</h5>
-                            <p class="text-primary">Poste occupé</p>
+                        <div class="team-text bg-light text-center p-2">
+                            <h5 class="fs-6">LOMPO Alassane</h5>
+                            <p class="text-primary fw-bold">Coordonnateur Provincial du Gourma</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -461,27 +606,364 @@
         <div class="container">
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-1.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/2.jpg')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
+                        <h5 class="mb-1">WANGRE Amadou</h5>
+                        <span class="fst-italic">Coordonnateur National <br/>Sociologue</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-2.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/1.jpg')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
+                        <h5 class="mb-1">WOROKUY David Seth</h5>
+                        <span class="fst-italic">Directeur de Programme <br /> Juriste</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{secure_asset('assets/img/testimonial-3.jpg')}}" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/3.jpg')}}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
+                        <h5 class="mb-1">SABO / RAMDE W. Félicité</h5>
+                        <span class="fst-italic">Directeur des Affaires Administratives et Financières <br>Economiste</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/4.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAVADOGO Hassane
+                            </h5>
+                        <span class="fst-italic"> Assistant Méthodologique <br>Administrateur Civil</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/5.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BATIONO Mickael</h5>
+                        <span class="fst-italic">Chargé de Suivi Evaluation – Capitalisation et Apprentissage <br>Statisticien – Analyste Data</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/6.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">KABORE W Claude Bonaventure</h5>
+                        <span class="fst-italic">Chargé de Suivi évaluation – Capitalisation et apprentissage <br>Sociologue</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/7.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAWADOGO Aminata</h5>
+                        <span class="fst-italic">Assistante de Coordination</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/43.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Rasmané</h5>
+                        <span class="fst-italic">Chef Comptable</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/8.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Zoenaba</h5>
+                        <span class="fst-italic">Comptable</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/9.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">NEYA Téné Charlotte</h5>
+                        <span class="fst-italic">Assistante Comptable</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/10.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">YODA Wendpuire Julie Viviane</h5>
+                        <span class="fst-italic">Communicatrice</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/11.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">GUIRO Idriss Fad Abasse
+                            </h5>
+                        <span class="fst-italic">Communicateur Commuty Manager AMR </span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/12.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO W. Paul</h5>
+                        <span class="fst-italic">Spécialiste en mobilisation sociale Chargé de Cohésion Sociale <br /> Juriste</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/13.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Ouahabou</h5>
+                        <span class="fst-italic">Chargé projet Gouvernance Locale <br> Géographe – Gestionnaire de projets</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/14.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">KARAMBIRI Céline</h5>
+                        <span class="fst-italic">Superviseur Projet Santé Communautaire <br>Sociologue</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/15.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">KOANDA Bertille</h5>
+                        <span class="fst-italic">Chargée R2G & Plaidoyer<br>Communicatrice</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/16.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">ZOROME Arouna</h5>
+                        <span class="fst-italic">Spécialiste en Suivi évaluation <br>Statisticien - Data analyste</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/17.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SANOU Brigitte</h5>
+                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Boucle du Mouhoun - Nord</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/18.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">ZONGO Marcellin</h5>
+                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Sahel Burkina</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/19.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAVADOGO Mahamady</h5>
+                        <span class="fst-italic">Superviseur mission AMR-PAM <br>Centre-Nord Burkina</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/20.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">RIBOU Sébastien</h5>
+                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Est Burkina</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/21.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Hamed</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/22.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Cyr Wendwaoga</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/23.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Nazemsé Honoré</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/24.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">CONGO Natacha</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/25.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAVADOGO Sayouba</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/26.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Saidou</h5>
+                        <span class="fst-italic">Assistant de sécurité <br />Service d’appui</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/27.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BANGRE Mahamoudou</h5>
+                        <span class="fst-italic">Membre d’Honneur <br />Ancien Président</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/28.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">MANDZABA François</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/29.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SIENOU Adama</h5>
+                        <span class="fst-italic">Technicien Inter Communal <br />Géographe</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/30.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">ZONGO Hamidou</h5>
+                        <span class="fst-italic">Technicien Inter Communal</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/31.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Inoussa</h5>
+                        <span class="fst-italic">Assistant de sécurité <br />Service d’appui</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/32.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SIGUE Adama</h5>
+                        <span class="fst-italic">Agent de conduite <br />Service d’appui</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/33.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAMANDOULOUGOU Lockre Célestin</h5>
+                        <span class="fst-italic">Président du Conseil d’Administration <br />Economiste</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/34.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUMSAORE N Gaston</h5>
+                        <span class="fst-italic">Président du Comité National de 
+                            Contrôle et de Vérification <br >Auditeur Comptable</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/35.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BANGRE K André</h5>
+                        <span class="fst-italic">Président du Comité National de 
+                            Plaidoyer et d’Orientation Stratégique <br />Economiste</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/44.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">OUEDRAOGO Faty</h5>
+                        <span class="fst-italic">Femme de ménage
+                            <br /> Service d’appui</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/36.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">SAVADOGO Abdoulaye</h5>
+                        <span class="fst-italic">Directeur de la Vie Associative</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/37.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Kiemde Abdoul Aziz</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Zondoma <br > Spécialiste en éducation</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/38.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BALOUM François</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Sanematenga <br >Spécialiste en éducation</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/39.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BAYILI Joseph</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Boulkiemdé <br >Spécialiste en éducation</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/40.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BANDAOGO Roland Samy</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Boulgou <br >Spécialiste en éducation</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/41.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">LOMPO Alassane</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Gourma <br>Spécialiste en éducation</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{{asset('assets/img/membres/42.jpg')}}" style="width: 200px; height: 200px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">BAZIOMO Martial Richard</h5>
+                        <span class="fst-italic">Coordonnateur Provincial du Sanguié <br>Spécialiste en éducation</span>
                     </div>
                 </div>
             </div>
@@ -504,7 +986,9 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Appelez-nous maintenant</p>
-                            <h5 class="mb-0">+226 70-28-56-31 / 78-15-54–36</h5>
+                            <h5 class="mb-0">+226 73-88-59-09 / 67-36-78-27</h5>
+                            <h5 class="mb-0">+226 70-84-01-89 / 67-36-76-51</h5>
+                            <h5 class="mb-0">+226 03-16-02-04</h5>
                         </div>
                     </div>
                     <div class="bg-light rounded d-flex align-items-center p-5">
@@ -555,7 +1039,7 @@
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -563,7 +1047,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -571,7 +1055,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                         <h5 class="mb-1">Patient Name</h5>
@@ -589,9 +1073,9 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 class="text-light mb-4">Addresse</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>BP 20, Gourcy, Burkina Faso</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+226 70-28-56-31 / 78-15-54–36</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+226 73-88-59-09 / 67-36-78-27</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@amrbf.org</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -602,13 +1086,13 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Thématiques</h5>
-                    <a class="btn btn-link" href="">Droits Humains, Gouvernance Locale et Décentralisation</a>
-                    <a class="btn btn-link" href="">Promotion de la Femme et de l’Enfant</a>
-                    <a class="btn btn-link" href="">Souverenaité Alimentaire</a>
+                    <a class="btn btn-link" href="">Droits, cohésion, décentralisation et gouvernance locale</a>
+                    <a class="btn btn-link" href="">promotion, politique, économique, santé</a>
+                    <a class="btn btn-link" href="">Systèmes alimentaires durables</a>
                     <a class="btn btn-link" href="">Axes Transversaux</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">liens rapides</h5>
+                    <h5 class="text-light mb-4">Liens rapides</h5>
                     <a class="btn btn-link" href="">Présentation</a>
                     <a class="btn btn-link" href="">Nos Actions</a>
                     <a class="btn btn-link" href="">Contacts</a>
@@ -648,17 +1132,17 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{secure_asset('assets/lib/wow/wow.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/easing/easing.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/tempusdominus/js/moment.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
-    <script src="{{secure_asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+    <script src="{{asset('assets/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('assets/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('assets/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('assets/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset('assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('assets/lib/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{asset('assets/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{secure_asset('assets/js/main.js')}}"></script>
+    <script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>

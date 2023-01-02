@@ -89,6 +89,15 @@
     background-color: var(--primary) !important;
 }
 
+.bg-light{
+    background-color: #FEF5E7;
+}
+
+.btn-secondary{
+    background-color: #fff !important;
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
@@ -176,7 +185,7 @@
 
 .header-carousel .owl-nav {
     position: absolute;
-    width: 200px;
+    width: 300px;
     height: 45px;
     bottom: 30px;
     left: 50%;
@@ -471,6 +480,9 @@
     color: var(--dark);
 }
 
+.testimonial-item > .rounded-circle{
+    border-color: transparent !important;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
