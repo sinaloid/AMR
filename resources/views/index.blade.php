@@ -206,7 +206,7 @@
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Qualité ipsum sit. Aliq</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Devenir un membre</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Devenir Membre</a>
                     <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">En savoir plus</a>
                 </div>
             </div>
