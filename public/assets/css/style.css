@@ -5,6 +5,11 @@
     --dark: #1B2C51;
 }
 
+body{
+    overflow-x: hidden;
+    
+}
+
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -112,7 +117,7 @@
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
@@ -255,7 +260,7 @@
 }
 
 .page-header {
-    background: url(../img/header-page.jpg) top center no-repeat;
+    background: url(../img/amr-header.jpg) top center no-repeat;
     background-size: cover;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
