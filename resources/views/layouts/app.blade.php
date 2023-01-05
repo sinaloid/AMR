@@ -90,11 +90,11 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Présentation</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="team.html" class="dropdown-item">Visions</a>
-                        <a href="feature.html" class="dropdown-item">Valeurs</a>
-                        <a href="feature.html" class="dropdown-item">Missions</a>
-                        <a href="feature.html" class="dropdown-item">Objectifs</a>
-                        <a href="feature.html" class="dropdown-item">Organisation</a>
+                        <a href="{{route('visions')}}" class="dropdown-item">Visions</a>
+                        <a href="{{route('valeurs')}}" class="dropdown-item">Valeurs</a>
+                        <a href="{{route('missions')}}" class="dropdown-item">Missions</a>
+                        <a href="{{route('objectifs')}}" class="dropdown-item">Objectifs</a>
+                        <a href="{{route('organisation')}}" class="dropdown-item">Organisation</a>
                         <a href="testimonial.html" class="dropdown-item">Les membres</a>
                         <a href="appointment.html" class="dropdown-item">Equipe opérationnelle</a>
                     </div>
@@ -125,7 +125,7 @@
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h5 class="text-light mb-4">Addresse</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>BP 20, Gourcy, Burkina Faso</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+226 73-88-59-09 / 67-36-78-27</p>
@@ -144,7 +144,7 @@
                     <a class="btn btn-link" href="">Systèmes alimentaires durables</a>
                     <a class="btn btn-link" href="">Axes Transversaux</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-2 col-md-6">
                     <h5 class="text-light mb-4">Liens rapides</h5>
                     <a class="btn btn-link" href="">Présentation</a>
                     <a class="btn btn-link" href="">Nos Actions</a>
