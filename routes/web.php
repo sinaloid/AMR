@@ -36,7 +36,7 @@ Route::get('visions', function () {
 })->name('visions');
 Route::get('valeurs', function () {
     $datas = [
-        "class" => "bi-eye-fill",
+        "class" => "bi-collection-fill",
         "title" => "Valeurs",
         "content" => ""
     ];
