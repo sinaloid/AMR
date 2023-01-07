@@ -73,13 +73,29 @@ Route::get('objectifs', function () {
 })->name('objectifs');
 Route::get('organisation', function () {
     $datas = [
-        "class" => "bi-eye-fill",
+        "class" => "bi-diagram-3-fill",
         "title" => "Organisation",
         "content" => ""
     ];
     return view('organisation', compact('datas'));
 })->name('organisation');
 
+Route::get('membres', function () {
+    $datas = [
+        "class" => "bi-people-fill",
+        "title" => "Membres",
+        "content" => ""
+    ];
+    return view('membre',compact('datas'));
+})->name('membres');
+Route::get('equipes', function () {
+    $datas = [
+        "class" => "bi-people-fill",
+        "title" => "Equipes",
+        "content" => ""
+    ];
+    return view('equipe',compact('datas'));
+})->name('equipes');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

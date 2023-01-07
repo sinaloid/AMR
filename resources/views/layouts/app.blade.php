@@ -95,8 +95,8 @@
                         <a href="{{route('missions')}}" class="dropdown-item">Missions</a>
                         <a href="{{route('objectifs')}}" class="dropdown-item">Objectifs</a>
                         <a href="{{route('organisation')}}" class="dropdown-item">Organisation</a>
-                        <a href="testimonial.html" class="dropdown-item">Les membres</a>
-                        <a href="appointment.html" class="dropdown-item">Equipe opérationnelle</a>
+                        <a href="{{route('membres')}}" class="dropdown-item">Les membres</a>
+                        <a href="{{route('equipes')}}" class="dropdown-item">Equipe opérationnelle</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">

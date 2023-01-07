@@ -334,13 +334,13 @@ body{
 
 .team-item .team-text {
     position: relative;
-    height: 100px;
+    height: 110px;
     transition: .5s;
 }
 
 .team-item:hover .team-text {
     margin-top: -60px;
-    height: 160px;
+    height: 170px;
 }
 
 .team-item .team-text .team-social {
