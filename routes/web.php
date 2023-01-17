@@ -100,6 +100,24 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
+
+Route::get('/home/personnel', function () {
+    return view('dashbord.personnel');
+})->name('personnel');
+
+Route::get('/home/membre', function () {
+    return view('dashbord.membre');
+})->name('membre');
+
+Route::get('/home/paiement', function () {
+    return view('dashbord.paiement');
+})->name('paiement');
+
+
+
+
+
 Route::get('{id}', function () {
     $datas = [
         "class" => "bi-exclamation-triangle",

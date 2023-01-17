@@ -75,7 +75,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn fixed-top" data-wow-delay="0.1s">
-        <a href="{{route("index")}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="{{route('index')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary">
                 <img class="me-" height="48px" src="{{secure_asset('assets/img/logo.png')}}" alt="AMR">
                 <span class="d-inline-block align-middle">AMR</span>
@@ -86,10 +86,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{route("index")}}" class="nav-item nav-link active">Accueil</a>
+                <a href="{{route('index')}}" class="nav-item nav-link active">Accueil</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Présentation</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0 bg-light">
                         <a href="{{route('visions')}}" class="dropdown-item">Visions</a>
                         <a href="{{route('valeurs')}}" class="dropdown-item">Valeurs</a>
                         <a href="{{route('missions')}}" class="dropdown-item">Missions</a>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Thématiques</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0 bg-light">
                         <a href="feature.html" class="dropdown-item">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</a>
                         <a href="team.html" class="dropdown-item">La promotion de l’autonomisation politique et économique de la femme et du jeune et la santé de l’enfant</a>
                         <a href="appointment.html" class="dropdown-item">Systèmes alimentaires durables</a>
@@ -109,12 +109,41 @@
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
-                <a href="{{route("apropos")}}" class="nav-item nav-link">À propos</a>
-                <a href="{{route("contact")}}" class="nav-item nav-link">Contact</a>
-                <a href="{{route("login")}}" class="nav-item nav-link">Connexion</a>
+                <a href="{{route('apropos')}}" class="nav-item nav-link">À propos</a>
+                <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                        @guest
+                            @if (Route::has('login'))
+                            <a href="{{route('login')}}" class="nav-item nav-link">Connexion</a>
+                            @endif
 
+                            @if (Route::has('register'))
+                                <!--a class="nav-item nav-link" href="{{ route('register') }}">{{ __('Register') }}</a-->
+                            @endif
+                        @else
+                            <a href="{{route('home')}}" class="nav-item nav-link">Compte</a>
+
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->nom ." ".Auth::user()->prenom  }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end bg-light" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        Déconnection
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
             </div>
+            @guest
             <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Devenir Membre<i class="fa fa-arrow-right ms-3"></i></a>
+            @endguest
         </div>
     </nav>
     <!-- Navbar End -->

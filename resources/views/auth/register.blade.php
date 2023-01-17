@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
 
 </head>
 
@@ -36,34 +36,40 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Créer un compte !</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" method="POST" action="{{ route('register') }}">
+                                @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        name="prenom"
                                             placeholder="Prénom">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        name="nom"
                                             placeholder="Nom">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    name="email"
                                         placeholder="Adresse email">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
+                                        name="password"
                                             id="exampleInputPassword" placeholder="Mots de passe">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
+                                        name="password_confirmation"
                                             id="exampleRepeatPassword" placeholder="Comfirmer le mots de passe">
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                <button type="submit" class="btn btn-primary btn-user btn-block">
                                     Créer un compte
-                                </a>
+                                </button>
                                 <hr>
                                 <a href="index.html" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> S'inscrire avec Google
