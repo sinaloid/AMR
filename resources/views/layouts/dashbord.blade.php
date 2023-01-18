@@ -16,9 +16,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{secure_asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{secure_asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
 
 </head>
 
@@ -43,7 +47,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{route('home')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Tableau de bord</span></a>
             </li>
@@ -58,52 +62,69 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                <a class="nav-link collapsed" href="{{route('projets')}}">
+                    <i class="bi bi-calendar3"></i>
                     <span>Projets</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Types :</h6>
-                        <a class="collapse-item" href="buttons.html">Projets en cours</a>
-                        <a class="collapse-item" href="cards.html">Projets à venir</a>
-                        <a class="collapse-item" href="cards.html">Projets terminer</a>
-                        <a class="collapse-item" href="cards.html">Projets en suspension</a>
-                        
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="tablesp.html">
-                    <i class="fas fa-fw fa-wrench"></i>
+                <a class="nav-link collapsed" href="{{route('actualites')}}">
+                    <i class="bi bi-newspaper"></i>
                     <span>Actualités</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#">
-                    <i class="fas fa-fw fa-wrench"></i>
+                <a class="nav-link collapsed" href="{{route('rapports')}}">
+                    <i class="bi bi-journals"></i>
                     <span>Rapports</span>
+                </a>
+            </li>
+            <!--li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('adherents')}}">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Adhérents</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('membre')}}">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="bi bi-people-fill"></i>
                     <span>Membres</span>
                 </a>
-            </li>
+            </li-->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('personnel')}}">
-                    <i class="fas fa-fw fa-wrench"></i>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="bi bi-people-fill"></i>
                     <span>Personnels</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="{{route('adherents')}}">
+                            <span>Adhérents</span>
+                        </a>
+                        <a class="collapse-item" href="{{route('membre')}}">
+                            <span>Membres</span>
+                        </a>
+                        <a class="collapse-item" href="{{route('personnel')}}">
+                            <span>Agents</span></a>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('paiement')}}">
+                    <i class="bi bi-credit-card-fill"></i>
+                    <span>Paiements</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('paiement')}}">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Paiements</span>
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Paramètres</span>
                 </a>
             </li>
             <!--li class="nav-item">
@@ -135,7 +156,7 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="bi bi-person-fill"></i>
                     <span>Mes infos</span>
                 </a>
                 
@@ -158,9 +179,9 @@
                     <span>Mes rapports</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Message</span></a>
+                <a class="nav-link" href="{{route('messages')}}">
+                    <i class="bi bi-chat-dots-fill"></i>
+                    <span>Messages</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -227,7 +248,7 @@
                 <form class="form-inline mr-auto w-100 navbar-search">
                     <div class="input-group">
                         <input type="text" class="form-control bg-light border-0 small"
-                            placeholder="Search for..." aria-label="Search"
+                            placeholder="Recherche ..." aria-label="Search"
                             aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="button">
@@ -447,7 +468,7 @@
     <script src="{{secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{secure_asset('asstets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{secure_asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="{{secure_asset('assets/js/sb-admin-2.min.js')}}"></script>

@@ -103,16 +103,44 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/home/personnel', function () {
-    return view('dashbord.personnel');
+    $datas = [1,1,1,];
+    return view('dashbord.personnel', compact('datas'));
 })->name('personnel');
 
 Route::get('/home/membre', function () {
-    return view('dashbord.membre');
+    $datas = [1,1,1,];
+    return view('dashbord.membre', compact('datas'));
 })->name('membre');
 
+Route::get('/home/adherents', function () {
+    $datas = [1,1,1,];
+    return view('dashbord.adherent', compact('datas'));
+})->name('adherents');
+
+Route::get('/home/projets', function () {
+    $datas = [1,1,1,];
+    return view('dashbord.projet', compact('datas'));
+})->name('projets');
+
 Route::get('/home/paiement', function () {
-    return view('dashbord.paiement');
+    $datas = [1,1,1,];
+    return view('dashbord.paiement', compact('datas'));
 })->name('paiement');
+
+Route::get('/home/rapports', function () {
+    $datas = [1,1,1,];
+    return view('dashbord.rapport', compact('datas'));
+})->name('rapports');
+
+Route::get('/home/actualites', function () {
+    $datas = [1,1,1,];
+    return view('dashbord.actualite', compact('datas'));
+})->name('actualites');
+
+Route::get('/home/messages', function () {
+    $datas = [1,1,1,];
+    return view('dashbord.message', compact('datas'));
+})->name('messages');
 
 
 

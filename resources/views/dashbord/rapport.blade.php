@@ -4,46 +4,49 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Les paiements</h1>
-    <p class="mb-4">Tableau des paiements effectués sur la plateforme l'association monde rural (AMR)</p>
-
+    <h1 class="h3 mb-2 text-gray-800">Les rapports</h1>
+    <p class="mb-4">Tableau des rapports de l'association monde rural (AMR)</p>
+    <div class="mb-2">
+        <button class="btn btn-success fw-bold my-2 me-2">Rapports reçus</button>
+        <button class="btn btn-warning fw-bold my-2 me-2">Rapports en cours</button>
+        
+        </div>
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-1 d-flex">
-            <h6 class="d-inline-block py-2 font-weight-bold text-primary">Liste des paiements</h6>
-
-            <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-plus-circle-fill"></i> Faire un paiement</button>
+            <h6 class="d-inline-block flex-grow-1 font-weight-bold text-primary py-2">Liste des rapports reçus</h6>
+            <div class="d-inline-block">
+            <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-plus-circle-fill"></i> Ajouter un rapport</button>
+                <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-receipt"></i> Demander un rapport</button>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Nom Prénom</th>
-                            <th>Montant</th>
-                            <th>Date</th>
-                            <th>Type</th>
+                            <th>Agents</th>
+                            <th>Dates</th>
+                            <th>Types</th>
                             <th>Description</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th>Nom Prénom</th>
-                            <th>Montant</th>
-                            <th>Date</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                            <th>Action</th>
+                            <th>Agents</th>
+                            <th>Dates</th>
+                            <th>Types</th>
+                            <th>Descriptions</th>
+                            <th>Actions</th>
                         </tr>
                     </tfoot>
                     <tbody>
                         @foreach ($datas as $data)
                         <tr>
                             <td>Ouedraogo Ali</td>
-                            <td>25.000 FCFA</td>
                             <td>12/01/2023</td>
-                            <td>paiement</td>
+                            <td>Lorem ipsum dolor sit</td>
                             <td>participation à un atelier</td>
                             <td>
                                 <span class="d-inline-block"><i class="bi bi-eye-fill"></i></span>

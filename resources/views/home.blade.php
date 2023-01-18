@@ -98,6 +98,41 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Projets total Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Projets terminer</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="bi bi-calendar3 fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                    Projets en cours</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">120</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="bi bi-calendar3 fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Content Row -->
@@ -309,12 +344,12 @@
                                 target="_blank" rel="nofollow" href="#">unDraw</a>, a
                             constantly updated collection of beautiful svg images that you can use
                             completely free and without attribution!</p>
-                        <a target="_blank" rel="nofollow" href="#">Lire plus</a>
+                        <a target="_blank" rel="nofollow" href="#">Voir plus</a>
                     </div>
                 </div>
 
                 <!-- Approach -->
-                <div class="card shadow mb-4">
+                <!--div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Actualité</h6>
                     </div>
@@ -325,7 +360,7 @@
                         <p class="mb-0">Before working with this theme, you should become familiar with the
                             Bootstrap framework, especially the utility classes.</p>
                     </div>
-                </div>
+                </div-->
 
             </div>
         </div>
