@@ -7,17 +7,24 @@
     <h1 class="h3 mb-2 text-gray-800">Les rapports</h1>
     <p class="mb-4">Tableau des rapports de l'association monde rural (AMR)</p>
     <div class="mb-2">
-        <button class="btn btn-success fw-bold my-2 me-2">Rapports reçus</button>
-        <button class="btn btn-warning fw-bold my-2 me-2">Rapports en cours</button>
-        
+        @if (Route::currentRouteName() == 'rapports') 
+            <button class="btn btn-success fw-bold my-2 me-2">Rapports reçus</button>
+            <button class="btn btn-danger fw-bold my-2 me-2">Rapports en retard</button>
+            <button class="btn btn-warning fw-bold my-2 me-2">Rapports en cours</button>
+        @endif
+        @if (Route::currentRouteName() == 'mes-rapports') 
+            <button class="btn btn-danger fw-bold my-2 me-2">Rapports en retard</button>
+            <button class="btn btn-warning fw-bold my-2 me-2">Rapports en cours</button>
+            <button class="btn btn-success fw-bold my-2 me-2">Rapports terminer</button>
+        @endif
         </div>
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-1 d-flex">
             <h6 class="d-inline-block flex-grow-1 font-weight-bold text-primary py-2">Liste des rapports reçus</h6>
             <div class="d-inline-block">
-            <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-plus-circle-fill"></i> Ajouter un rapport</button>
-                <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-receipt"></i> Demander un rapport</button>
+                <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-plus-circle-fill"></i> Faire un rapport</button>
+                @if (Route::currentRouteName() == 'rapports') <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-receipt"></i> Demander un rapport</button> @endif
             </div>
         </div>
         <div class="card-body">

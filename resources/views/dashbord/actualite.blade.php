@@ -6,12 +6,15 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Les actualités</h1>
     <p class="mb-4">Actualité des membres de l'association monde rural (AMR)</p>
-
-    <!-- DataTales Example -->
+    <div class="mb-2">
+            <button class="btn btn-success fw-bold my-2 me-2">Nouvelles actualités</button>
+            <button class="btn btn-danger fw-bold my-2 me-2">Anciennes actualités</button>
+        </div>
+    <!-- DataTales Example Liste des anciennes actualités -->
     <div class="card shadow mb-4">
         <div class="card-header py-1 d-flex">
-            <h6 class="d-inline-block font-weight-bold text-primary py-2">Liste des actualités</h6>
-            <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-plus-circle-fill"></i> Ajouter une actualité</button>
+            <h6 class="d-inline-block font-weight-bold text-primary py-2">Liste des nouvelles actualités</h6>
+            <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-plus-circle-fill"></i> Ajouter une actualité</button>
         </div>
         <div class="card-body">
             <div class="table-responsive">

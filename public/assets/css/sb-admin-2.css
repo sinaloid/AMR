@@ -10399,7 +10399,7 @@ a:focus {
 }
 
 .border-left-primary {
-    border-left: 0.25rem solid #4e73df !important;
+    border-left: 0.25rem solid var(--primary) !important;
 }
 
 .border-bottom-primary {

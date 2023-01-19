@@ -12,7 +12,7 @@
         <div class="col-12 col-md-8 p-0 card shadow mb-4">
             <div class="card-header py-1 d-flex">
                 <h6 class="d-inline-block font-weight-bold text-primary py-2">Liste des messages</h6>
-                <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-chat-square-text-fill"></i> Envoyer un message</button>
+                <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-chat-square-text-fill"></i> Envoyer un message</button>
             </div>
             <div class="card-body">
                 <div class="table-responsive">

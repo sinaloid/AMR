@@ -86,9 +86,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{route('index')}}" class="nav-item nav-link active">Accueil</a>
+                <a href="{{route('index')}}" class="nav-item nav-link @if (Route::currentRouteName() == 'index') active @endif">Accueil</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Présentation</a>
+                    <a href="#" class="nav-link dropdown-toggle
+                    @if (Route::currentRouteName() == 'visions'
+                        || Route::currentRouteName() == 'valeurs'
+                        || Route::currentRouteName() == 'missions'
+                        || Route::currentRouteName() == 'objectifs'
+                        || Route::currentRouteName() == 'organisation'
+                        || Route::currentRouteName() == 'membres'
+                        || Route::currentRouteName() == 'equipes'
+                    ) active @endif" data-bs-toggle="dropdown">Présentation</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0 bg-light">
                         <a href="{{route('visions')}}" class="dropdown-item">Visions</a>
                         <a href="{{route('valeurs')}}" class="dropdown-item">Valeurs</a>
@@ -100,20 +108,24 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Thématiques</a>
+                    <a href="#" class="nav-link dropdown-toggle 
+                    @if (Route::currentRouteName() == 'droits'
+                        || Route::currentRouteName() == 'promotion'
+                        || Route::currentRouteName() == 'systemes'
+                        || Route::currentRouteName() == 'axes-transverseaux'
+                    ) active @endif" data-bs-toggle="dropdown">Thématiques</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0 bg-light">
-                        <a href="feature.html" class="dropdown-item">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</a>
-                        <a href="team.html" class="dropdown-item">La promotion de l’autonomisation politique et économique de la femme et du jeune et la santé de l’enfant</a>
-                        <a href="appointment.html" class="dropdown-item">Systèmes alimentaires durables</a>
-                        <a href="testimonial.html" class="dropdown-item">Axes Transversaux</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="droits" class="dropdown-item">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</a>
+                        <a href="promotion" class="dropdown-item">La promotion de l’autonomisation politique et économique de la femme et du jeune et la santé de l’enfant</a>
+                        <a href="systemes" class="dropdown-item">Systèmes alimentaires durables</a>
+                        <a href="axes-transverseaux" class="dropdown-item">Axes Transversaux</a>
                     </div>
                 </div>
-                <a href="{{route('apropos')}}" class="nav-item nav-link">À propos</a>
-                <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                <a href="{{route('apropos')}}" class="nav-item nav-link @if (Route::currentRouteName() == 'apropos') active @endif">À propos</a>
+                <a href="{{route('contact')}}" class="nav-item nav-link @if (Route::currentRouteName() == 'contact') active @endif">Contact</a>
                         @guest
                             @if (Route::has('login'))
-                            <a href="{{route('login')}}" class="nav-item nav-link">Connexion</a>
+                            <a href="{{route('login')}}" class="nav-item nav-link @if (Route::currentRouteName() == 'login') active @endif">Connexion</a>
                             @endif
 
                             @if (Route::has('register'))

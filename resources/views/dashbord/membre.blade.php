@@ -11,7 +11,7 @@
     <div class="card shadow mb-4">
         <div class="card-header py-1 d-flex">
             <h6 class="d-inline-block font-weight-bold text-primary py-2">Liste des membres</h6>
-            <button class="btn btn-primary d-inline-block ms-auto"><i class="bi bi-plus-circle-fill"></i> Ajouter un membre</button>
+            <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-plus-circle-fill"></i> Ajouter un membre</button>
         </div>
         <div class="card-body">
             <div class="table-responsive">
