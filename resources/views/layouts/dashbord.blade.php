@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>AMR - Association Monde Rural</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{secure_asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -82,10 +82,11 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="bi bi-people-fill"></i>
                     <span>Personnels</span>
+                    <i class="bi bi-people-fill"></i>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -407,7 +408,7 @@
                     Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Déconnection
                 </a>
@@ -444,19 +445,20 @@
     </a>
 
     <!-- Déconnection Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    
+
+    <div class="modal fade" id="logoutModal">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Prêt à partir ?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">Sélectionnez "Déconnexion" ci-dessous si vous êtes prêt à mettre fin à votre session en cours.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Annuler</button>
                     <a class="btn btn-primary" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -472,8 +474,8 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="{{secure_asset('assets/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="{{secure_asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
@@ -487,6 +489,7 @@
     <!-- Page level custom scripts -->
     <script src="{{secure_asset('assets/js/demo/chart-area-demo.js')}}"></script>
     <script src="{{secure_asset('assets/js/demo/chart-pie-demo.js')}}"></script>
+    <script src="{{secure_asset('assets/js/axios.min.js')}}"></script>
 
 </body>
 

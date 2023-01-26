@@ -17,11 +17,22 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
+            $table->string('numero')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('position')->nullable();
+            $table->string('coordination')->nullable();
+            $table->string('organisation')->nullable();
+            $table->string('status')->nullable();
+            $table->string('naissance')->nullable();
+            $table->string('date_adhesion')->nullable();
+            $table->string('autorisation')->default(0);
+            $table->string('slug');
+
         });
     }
 

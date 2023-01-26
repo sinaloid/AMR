@@ -19,7 +19,7 @@
         <div class="card-header py-1 d-flex">
             <h6 class="d-inline-block py-2 font-weight-bold text-primary">Liste des paiements</h6>
 
-            <button class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-plus-circle-fill"></i> Faire un paiement</button>
+            <a href="{{route('faire-paiement')}}" class="btn btn-primary d-inline-block ms-auto fw-bold"><i class="bi bi-plus-circle-fill"></i> Faire un paiement</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -64,6 +64,5 @@
             </div>
         </div>
     </div>
-
 </div>
 @endsection

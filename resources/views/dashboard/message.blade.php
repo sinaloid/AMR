@@ -31,13 +31,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown no-arrow">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                        <div class="dropdown no-arrow me-1">
+                            <a href="#" role="button" class="dropdown-toggle" data-bs-toggle="dropdown">
                                 <i class="fas fa-ellipsis-v fa-sm fa-fw fa-2x text-gray-400"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in">
                                 <div class="dropdown-header">Actions</div>
                                 <a class="dropdown-item" href="#">Lire</a>
                                 <a class="dropdown-item" href="#">Répondre</a>

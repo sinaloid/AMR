@@ -22,6 +22,15 @@ class User extends Authenticatable
         'prenom',
         'email',
         'password',
+        'numero',
+        'position',
+        'coordination',
+        'organisation',
+        'status',
+        'naissance',
+        'date_adhesion',
+        'autorisation',
+        'slug'
     ];
 
     /**

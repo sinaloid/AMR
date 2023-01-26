@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{secure_asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
 
 </head>
 
@@ -40,20 +40,28 @@
                                 @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                        name="prenom"
-                                            placeholder="Prénom">
-                                    </div>
-                                    <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="exampleLastName"
                                         name="nom"
                                             placeholder="Nom">
                                     </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        name="prenom"
+                                            placeholder="Prénom">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                <div class="form-group row">
+                                    
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
                                     name="email"
                                         placeholder="Adresse email">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        name="numero"
+                                            placeholder="Numéro">
+                                    </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
