@@ -77,7 +77,7 @@ class AdhesionController extends Controller
             
             });
             //notify()->success('Laravel Notify is awesome!');
-            notify()->preset('user-created');
+            notify()->preset('user-request');
             return redirect()->route('index');;
         
     }

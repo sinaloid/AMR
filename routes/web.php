@@ -212,9 +212,12 @@ Route::get('/dashboard/adhesion', [AdhesionController::class, 'adhesion'])->name
 Route::get('{id}', function () {
     $datas = [
         "class" => "bi-exclamation-triangle",
-        "title" => "Page non trouvée",
+        "title" => "Temporairement indisponible",
+        "content" => ""
+        
+        /*"title" => "Page non trouvée",
         "content" => "Nous sommes désolés, la page que vous avez recherchée n'existe pas sur notre site Web ! 
-        Allez peut-être sur notre page d'accueil ou essayez d'utiliser une recherche ?"
+        Allez peut-être sur notre page d'accueil ou essayez d'utiliser une recherche ?"*/
     ];
     return view('content', compact('datas'));
 });

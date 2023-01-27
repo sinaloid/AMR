@@ -62,6 +62,12 @@ return [
             'model'   => 'connect',
             'title'   => 'Création réussi !',
         ],
+        'user-request' => [
+            'message' => "Votre d'adhésion a été réçu !",
+            'type'    => 'success',
+            'model'   => 'connect',
+            'title'   => 'Envoi réussi !',
+        ],
         'delete' => [
             'message' => 'Les données ont été supprimer',
             'type'    => 'success',
