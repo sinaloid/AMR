@@ -24,7 +24,7 @@
                     <p class="mb-4">{!! $datas['content'] !!}</p>
                     <!--a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a-->
                     <p class="">
-                        <img width="100%" src="{{secure_asset('assets/img/valeurs.png')}}" alt="">
+                        <img width="100%" src="{{asset('assets/img/valeurs.png')}}" alt="">
                     </p>
                     <div class="text-justify">
                         <ul>

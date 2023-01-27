@@ -11,7 +11,7 @@
                 <div class="row g-4">
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
-                            <h2 class="text-white mb-1" data-toggle="counter-up">26</h2>
+                            <h2 class="text-white mb-1" data-toggle="counter-up">27</h2>
                             <p class="text-light mb-0">Ans d'existence</p>
                         </div>
                     </div>
@@ -32,32 +32,32 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{ secure_asset('assets/img/carousel-1.jpg') }}" alt="">
+                        <img height="20px" class="img-fluid" src="{{ asset('assets/img/carousel-1.jpg') }}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Cardiology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{ secure_asset('assets/img/carousel-2.jpg') }}" alt="">
+                        <img height="20px" class="img-fluid" src="{{ asset('assets/img/carousel-2.jpg') }}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Neurology</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{ secure_asset('assets/img/carousel-3.jpg') }}" alt="">
+                        <img height="20px" class="img-fluid" src="{{ asset('assets/img/carousel-3.jpg') }}" alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{ secure_asset('assets/img/carousel/13.jpg') }}"
+                        <img height="20px" class="img-fluid" src="{{ asset('assets/img/carousel/13.jpg') }}"
                             alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
                         </div>
                     </div>
                     <div class="owl-carousel-item position-relative">
-                        <img height="20px" class="img-fluid" src="{{ secure_asset('assets/img/carousel/17.jpg') }}"
+                        <img height="20px" class="img-fluid" src="{{ asset('assets/img/carousel/17.jpg') }}"
                             alt="">
                         <div class="owl-carousel-text">
                             <!--h1 class="display-1 text-white mb-0">Pulmonary</h1-->
@@ -76,9 +76,9 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="{{ secure_asset('assets/img/about-1.jpg') }}"
+                        <img class="img-fluid rounded w-75 align-self-end" src="{{ asset('assets/img/about-1.jpg') }}"
                             alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{ secure_asset('assets/img/about-2.jpg') }}"
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{{ asset('assets/img/about-2.jpg') }}"
                             alt="" style="margin-top: -25%;">
                     </div>
                 </div>
@@ -104,7 +104,8 @@
                         climatique,
                         la prévention de l’extrémisme violent, le Do no Harm, LNOIB et la promotion du genre.</p>
                     @guest
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Devenir Membre</a>
+                        <button class="btn btn-primary rounded-pill py-3 px-5 mt-3" data-bs-target="#adhesionForm"
+                            data-bs-toggle="modal">Devenir Membre</button>
                     @endguest
                     <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">En savoir plus</a>
                 </div>
@@ -122,18 +123,20 @@
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/ambf.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/ambf.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+
+                        <p>
+                            L’Association des Municipalités du Burkina Faso, elle travaille à contribuer au renforcement de
+                            la décentralisation et à la promotion de la bonne gouvernance.
                         </p>
                         <h5 class="mb-1">AMBF</h5>
                         <!--span class="fst-italic">Profession</span-->
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/delen.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/delen.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -144,7 +147,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/diakonia.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/diakonia.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -155,7 +158,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/expertise.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/expertise.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -166,7 +169,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/care.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/care.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -177,7 +180,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/chemonics.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/chemonics.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -188,7 +191,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/creative.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/creative.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -199,7 +202,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/fonaenf.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/fonaenf.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -210,7 +213,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/hunger.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/hunger.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -221,7 +224,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/idlo.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/idlo.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -232,7 +235,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/jatur.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/jatur.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -243,7 +246,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/mondial.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/mondial.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -254,7 +257,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/fao.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/fao.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -265,7 +268,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/pnud.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/pnud.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -276,7 +279,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light mx-auto mb-4" src="{{ secure_asset('assets/img/pt/proget.png') }}"
+                    <img class="img-fluid bg-light mx-auto mb-4" src="{{ asset('assets/img/pt/proget.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -287,7 +290,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ secure_asset('assets/img/pt/semus.png') }}"
+                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/semus.png') }}"
                         style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
@@ -307,7 +310,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded-pill py-1 px-4">Thématiques</p>
-                <h1>Domaines d'interventions</h1>
+                <h1>Nos domaines d'interventions</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -316,9 +319,8 @@
                             style="width: 65px; height: 65px;">
                             <i class="bi bi-people-fill text-primary fs-4"></i>
                         </div>
+                        <p class="mb-4 fw-bold">Voir les actions de l'AMR en matière de :</p>
                         <h4 class="mb-3">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -328,10 +330,9 @@
                             style="width: 65px; height: 65px;">
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">La promotion de l’autonomisation politique et économique de la femme et du jeune
-                            et la santé de l’enfant</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
+                        <p class="mb-4 fw-bold">L'AMR oeuvre pour :</p>
+                        <h4 class="mb-3">La promotion de l’autonomisation politique, économique de la femme, du jeune
+                            et de la santé de l’enfant</h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -341,9 +342,10 @@
                             style="width: 65px; height: 65px;">
                             <i class="bi bi-diamond-fill text-primary fs-4"></i>
                         </div>
+                        <p class="mb-4 fw-bold">
+                            Découvrir les actions de l' AMR pour les:
+                        </p>
                         <h4 class="mb-3">Systèmes alimentaires durables</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -353,9 +355,8 @@
                             style="width: 65px; height: 65px;">
                             <i class="bi bi-disc-fill text-primary fs-4"></i>
                         </div>
+                        <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
                         <h4 class="mb-3">Axe transversaux : l’environnement durable et le changement climatique</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -365,10 +366,9 @@
                             style="width: 65px; height: 65px;">
                             <i class="fa fa-brain text-primary fs-4"></i>
                         </div>
+                        <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
                         <h4 class="mb-3">Axe transversaux : le genre, la santé communautaire,
                         </h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -378,10 +378,9 @@
                             style="width: 65px; height: 65px;">
                             <i class="fa fa-vials text-primary fs-4"></i>
                         </div>
+                        <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
                         <h4 class="mb-3">Axe transversaux : le Leaving no one behind (LNOB)
                         </h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                            diam sed stet.</p>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -408,7 +407,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                                         style="width: 55px; height: 55px;">
-                                        <i class="fa fa-user-md text-primary"></i>
+                                        <i class="bi bi-briefcase-fill text-primary"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="text-white mb-2">Travail</p>
@@ -432,7 +431,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                                         style="width: 55px; height: 55px;">
-                                        <i class="fa fa-comment-medical text-primary"></i>
+                                        <i class="bi bi-briefcase-fill text-primary"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="text-white mb-2">Travail avec</p>
@@ -444,7 +443,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
                                         style="width: 55px; height: 55px;">
-                                        <i class="fa fa-headphones text-primary"></i>
+                                        <i class="fa fa-brain text-primary"></i>
                                     </div>
                                     <div class="ms-4">
                                         <p class="text-white mb-2">Esprit</p>
@@ -456,32 +455,32 @@
                     </div>
                 </div>
                 <!--div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ secure_asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
-                                </div>
-                            </div-->
+                                                    <div class="position-relative h-100">
+                                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
+                                                    </div>
+                                                </div-->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="owl-carousel header-carousel" style="max-height: 500px;">
                         <div class="owl-carousel-item position-relative">
                             <img height="20px" class="img-fluid w-100 h-100"
-                                src="{{ secure_asset('assets/img/carousel/14.jpg') }}" style="object-fit: cover;"
+                                src="{{ asset('assets/img/carousel/14.jpg') }}" style="object-fit: cover;"
                                 alt="">
                         </div>
                         <div class="owl-carousel-item position-relative">
                             <img height="20px" class="img-fluid w-100 h-100"
-                                src="{{ secure_asset('assets/img/carousel/4.jpg') }}" style="object-fit: cover;"
-                                alt="">
-                        </div>
-
-                        <div class="owl-carousel-item position-relative">
-                            <img height="20px" class="img-fluid w-100 h-100"
-                                src="{{ secure_asset('assets/img/carousel/6.jpg') }}" style="object-fit: cover;"
+                                src="{{ asset('assets/img/carousel/4.jpg') }}" style="object-fit: cover;"
                                 alt="">
                         </div>
 
                         <div class="owl-carousel-item position-relative">
                             <img height="20px" class="img-fluid w-100 h-100"
-                                src="{{ secure_asset('assets/img/carousel/8.jpg') }}" style="object-fit: cover;"
+                                src="{{ asset('assets/img/carousel/6.jpg') }}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+
+                        <div class="owl-carousel-item position-relative">
+                            <img height="20px" class="img-fluid w-100 h-100"
+                                src="{{ asset('assets/img/carousel/8.jpg') }}" style="object-fit: cover;"
                                 alt="">
                         </div>
 
@@ -504,7 +503,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ secure_asset('assets/img/team-1.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/img/team-1.jpg') }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-2">
                             <h5 class="fs-6">WANGRE Amadou</h5>
@@ -520,7 +519,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ secure_asset('assets/img/team-2.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/img/team-2.jpg') }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-2">
                             <h5 class="fs-6">SAMANDOULOUGOU Lockre Célestin</h5>
@@ -536,7 +535,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ secure_asset('assets/img/team-3.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/img/team-3.jpg') }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-2">
                             <h5 class="fs-6">Kiemde Abdoul Aziz</h5>
@@ -554,7 +553,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ secure_asset('assets/img/team-4.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/img/team-4.jpg') }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-2">
                             <h5 class="fs-6">LOMPO Alassane</h5>
@@ -575,10 +574,13 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/2.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/2.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        <p>
+                            Accompagner les groupes vulnérables en leur donnant les moyens d’expression citoyenne a été pour
+                            moi une expérience riche d’émotions, mais aussi de fierté et d’espoir car un monde meilleur est
+                            toujours possible !
+                            WANGRE Amadou, Coordonnateur National AMR Burkina
                         </p>
                         <h5 class="mb-1">WANGRE Amadou</h5>
                         <span class="fst-italic">Coordonnateur National <br />Sociologue</span>
@@ -586,7 +588,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/1.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/1.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -597,7 +599,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/3.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/3.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -609,7 +611,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/4.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/4.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -621,7 +623,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/5.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/5.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -633,7 +635,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/6.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/6.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -646,7 +648,7 @@
 
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/7.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/7.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <P>
                             Je suis Aminata SAWADOGO, titulaire d’une licence option Gestion des Ressources Humaines.
@@ -662,7 +664,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/43.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/43.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -673,7 +675,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/8.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/8.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -684,7 +686,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/9.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/9.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis NEYA T Charlotte, Assistante Comptable à l'Association Monde Rural et chargée d'appuyer
@@ -700,7 +702,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/10.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/10.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis Wendpuiré Julie Viviane YODA, Conseillère en Sciences et Techniques de l'Information et
@@ -719,7 +721,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/11.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/11.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <P>
                             Je suis Idriss Fad Abasse GUIRO, Marketer et communicant.
@@ -734,7 +736,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/12.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/12.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je me nomme OUEDRAOGO W Paul, juriste et spécialiste en intermédiation sociale. Je possède une
@@ -750,7 +752,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/13.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/13.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis OUEDRAOGO Ouahabou, géographe de formation et chargé de projet Gouvernance Locale à
@@ -768,7 +770,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/14.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/14.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <P>
                             Je suis KARAMBIRI Céline. Je suis sociologue de formation avec pour option Dynamique Locale. Je
@@ -785,7 +787,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/15.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/15.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -797,10 +799,15 @@
 
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/16.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/16.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        <p>
+                            Je suis ZOROME Arouna, Chef de mission Third-Party Monitoring (TPM). Je suis Ingénieur
+                            Statisticien Environnementaliste.
+                            Ma mission au sein de l’AMR est de coordonner l’ensemble des activités TPM et de répondre aux
+                            différentes sollicitations de ma hiérarchie.
+                            Le TPM au Burkina Faso étant une nouvelle démarche promue par notre partenaire le PAM,
+                            j’ambitionne de faire de l’AMR, la référence TPM dans la sous région.
                         </p>
                         <h5 class="mb-1">ZOROME Arouna</h5>
                         <span class="fst-italic">Spécialiste en Suivi évaluation <br>Statisticien - Data analyste</span>
@@ -808,7 +815,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/17.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/17.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Accompagner les femmes rurales pour leur autonomisation à travers l’accès aux crédit par la
@@ -823,10 +830,14 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/18.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/18.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        <p>
+                            Être en contact permanent avec les communautés vulnérables et s’assurer que toute personne
+                            vulnérable qui est bénéficiaire reçoit une assistance alimentaire en qualité et quantité qui lui
+                            ai dû. Voici ceux à quoi je me suis attaché et qui me donnent une entière satisfaction
+                            Nissoma Waouaga Abdel Marcelin ZONGO Superviseur de projet à AMR-BURKINA
+
                         </p>
                         <h5 class="mb-1">ZONGO Marcellin</h5>
                         <span class="fst-italic">Superviseur mission AMR-PAM<br>Sahel Burkina</span>
@@ -834,7 +845,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/19.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/19.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -845,7 +856,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/20.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/20.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -857,7 +868,7 @@
 
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/21.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/21.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis OUEDRAOGO Hamed, j’ai un niveau de licence 2 en science économique et de gestion, mon
@@ -880,7 +891,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/22.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/22.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <P>
                             Je suis Ouédraogo Cyr Wendwaoga, juriste. J’ai rejoint AMR parce qu’étant à la recherche de
@@ -895,7 +906,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/23.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/23.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Je suis Ouédraogo Nazemsé Honoré, diplômé en science économique et de gestion, j’ai une
                             expérience dans le domaine humanitaire et une bonne
@@ -908,7 +919,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/24.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/24.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Je suis CONGO Natacha, technicienne intercommunale de l’Association Monde Rural, et je sers de
                             relais entre l’AMR et le monde communautaire
@@ -923,7 +934,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/25.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/25.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -934,7 +945,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/26.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/26.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -945,7 +956,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/27.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/27.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -956,7 +967,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/28.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/28.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis François MANDZABA, Technicien Inter Communal à AMR.Je suis aux côtés des communautés,
@@ -974,7 +985,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/29.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/29.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -985,7 +996,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/30.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/30.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -996,7 +1007,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/31.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/31.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1007,7 +1018,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/32.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/32.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1018,7 +1029,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/33.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/33.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1029,7 +1040,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/34.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/34.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1041,7 +1052,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/35.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/35.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1053,7 +1064,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/44.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/44.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1065,7 +1076,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/36.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/36.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis SAVADOGO Abdoulaye, sociologue de formation et membre fondateur de l'AMR
@@ -1084,7 +1095,7 @@
 
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/37.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/37.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1095,7 +1106,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/38.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/38.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1107,7 +1118,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/39.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/39.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1118,7 +1129,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/40.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/40.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1129,7 +1140,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/41.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/41.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
                             diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
@@ -1140,7 +1151,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ secure_asset('assets/img/membres/42.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset('assets/img/membres/42.jpg') }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
                             Je suis Bazyomo Martial Richard, point focal de l’AMR a Réo dans la province du Sanguié.
@@ -1165,9 +1176,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Contacts</p>
-                    <h1 class="mb-4">Besoin d'informations ? Alors constatez-nous</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4">Besoin d'informations ? Alors contactez-nous</h1>
+                    
                     <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                             style="width: 55px; height: 55px;">
@@ -1221,88 +1231,4 @@
         </div>
     </div>
     <!-- Appointment End -->
-    <div class="modal fade" id="adhesion">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Création d'un nouveau membre</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body mb-3">
-                    <form class="user" method="POST" action="{{ route('createPersonnel') }}">
-                        @csrf
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" name="nom"
-                                    placeholder="Nom">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" name="prenom"
-                                    placeholder="Prénom">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-
-                            <div class="col-sm-6">
-                                <input type="email" class="form-control form-control-user" name="email"
-                                    placeholder="Adresse email">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" name="numero"
-                                    placeholder="Numéro">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" name="position"
-                                    placeholder="Position">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" name="coordination"
-                                    placeholder="Coordination">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-
-                            <div class="col-sm-12">
-
-                                <select name="status" class="form-control select-radius1">
-                                    <option value="">Sélectionnez le status</option>
-                                    <option value="membre">Membre</option>
-                                    <option value="agent">Agent</option>
-                                    <option value="agent">Partenaire</option>
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <label for="">Date de naissance</label>
-                                <input type="date" class="form-control form-control-user" name="naissance"
-                                    placeholder="Date de naissance" value="1987-01-01">
-                            </div>
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <label for="">Date d'adhésion</label>
-                                <input type="Date" class="form-control form-control-user" name="date_adhesion"
-                                    placeholder="Date d'adhésion" value="1987-01-01">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-user btn-block">
-                            Créer un compte
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $("#adhesion").modal();
-        });
-    </script>
 @endsection

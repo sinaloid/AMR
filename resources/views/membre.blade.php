@@ -29,7 +29,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/35.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/35.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BANGRE K André</h5>
@@ -46,7 +46,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/34.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/34.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">OUMSAORE N Gaston</h5>
@@ -63,7 +63,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/33.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/33.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">SAMANDOULOUGOU Lockre Célestin</h5>
@@ -79,7 +79,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img class="img-fluid" src="{{secure_asset('assets/img/membres/37.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('assets/img/membres/37.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">Kiemde Abdoul Aziz</h5>
@@ -97,7 +97,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/41.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/41.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">LOMPO Alassane</h5>
@@ -113,7 +113,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/38.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/38.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BALOUM François</h5>
@@ -129,7 +129,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/39.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/39.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BAYILI Joseph</h5>
@@ -145,7 +145,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/42.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/42.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BAZIOMO Martial Richard</h5>
@@ -161,7 +161,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/40.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/40.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BANDAOGO Roland Samy</h5>
@@ -177,7 +177,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/27.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/27.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">BANGRE Mahamoudou</h5>
@@ -194,7 +194,7 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item position-relative rounded overflow-hidden">
                     <div class="overflow-hidden">
-                        <img width="100%" class="img-fluid" src="{{secure_asset('assets/img/membres/36.jpg')}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset('assets/img/membres/36.jpg')}}" alt="">
                     </div>
                     <div class="team-text bg-light text-center p-2">
                         <h5 class="fs-6">SAVADOGO Abdoulaye</h5>

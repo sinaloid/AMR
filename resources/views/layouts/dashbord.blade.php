@@ -12,17 +12,18 @@
     <title>AMR - Association Monde Rural</title>
 
     <!-- Custom fonts for this template-->
-    <link href="{{secure_asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{secure_asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="{{secure_asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    @notifyCss
 
 </head>
 
@@ -37,7 +38,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('index')}}">
                 <div class="sidebar-brand-icon rotate-n-150 bg-white rounded-circle p-1">
-                    <img width="30px" src="{{secure_asset('assets/img/logo.png')}}" alt="AMR" />
+                    <img width="30px" src="{{asset('assets/img/logo.png')}}" alt="AMR" />
                 </div>
                 <div class="sidebar-brand-text ms-2">AMR ~ Burkina</div>
             </a>
@@ -86,7 +87,6 @@
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="bi bi-people-fill"></i>
                     <span>Personnels</span>
-                    <i class="bi bi-people-fill"></i>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -114,7 +114,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('carburants')}}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
+                    <svg class="d-inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
                         <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336.383.228.634.551.794.907.295.655.294 1.465.294 2.081V7.5a.5.5 0 0 1-.5.5H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm2.5 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5Z"/>
                       </svg>
                     <span>Carburants</span></a>
@@ -182,7 +182,7 @@
             
             <li class="nav-item">
                 <a class="nav-link" href="{{route('carburants')}}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
+                    <svg class="d-inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
                         <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336.383.228.634.551.794.907.295.655.294 1.465.294 2.081V7.5a.5.5 0 0 1-.5.5H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm2.5 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5Z"/>
                       </svg>
                     <span>Carburants</span></a>
@@ -336,7 +336,7 @@
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="{{secure_asset('assets/img/undraw_profile_1.svg')}}"
+                        <img class="rounded-circle" src="{{asset('assets/img/undraw_profile_1.svg')}}"
                             alt="...">
                         <div class="status-indicator bg-success"></div>
                     </div>
@@ -347,7 +347,7 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="{{secure_asset('assets/img/undraw_profile_2.svg')}}"
+                        <img class="rounded-circle" src="{{asset('assets/img/undraw_profile_2.svg')}}"
                             alt="...">
                         <div class="status-indicator"></div>
                     </div>
@@ -358,7 +358,7 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="{{secure_asset('assets/img/undraw_profile_3.svg')}}"
+                        <img class="rounded-circle" src="{{asset('assets/img/undraw_profile_3.svg')}}"
                             alt="...">
                         <div class="status-indicator bg-warning"></div>
                     </div>
@@ -390,7 +390,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->nom ." ".Auth::user()->prenom  }}</span>
                 <img class="img-profile rounded-circle"
-                    src="{{secure_asset('assets/img/undraw_profile.svg')}}">
+                    src="{{asset('assets/img/undraw_profile.svg')}}">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -419,6 +419,10 @@
 
 </nav>
 <!-- End of Topbar -->
+<div class="fixed-top">
+    @include('notify.components.notify')
+<x:notify-messages />
+</div>
             <!-- Main Content -->
             @yield('content')
             <!-- End of Main Content -->
@@ -478,19 +482,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{secure_asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{secure_asset('assets/js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('assets/js/sb-admin-2.min.js')}}"></script>
 
     <!-- Page level plugins -->
-    <script src="{{secure_asset('assets/vendor/chart.js/Chart.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/chart.js/Chart.min.js')}}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{secure_asset('assets/js/demo/chart-area-demo.js')}}"></script>
-    <script src="{{secure_asset('assets/js/demo/chart-pie-demo.js')}}"></script>
-    <script src="{{secure_asset('assets/js/axios.min.js')}}"></script>
-
+    <script src="{{asset('assets/js/demo/chart-area-demo.js')}}"></script>
+    <script src="{{asset('assets/js/demo/chart-pie-demo.js')}}"></script>
+    <script src="{{asset('assets/js/axios.min.js')}}"></script>
+    @notifyJs
 </body>
 
 </html>

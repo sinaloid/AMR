@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\PersonnelController;
+use App\Http\Controllers\AdhesionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,7 @@ use App\Http\Controllers\PersonnelController;
 */
 
 Route::get('/', function () {
+    
     return view('index');
 })->name('index');
 
@@ -47,7 +49,7 @@ Route::get('valeurs', function () {
 Route::get('missions', function () {
     $datas = [
         "class" => "bi-award-fill",
-        "title" => "Missions",
+        "title" => "Mission",
         "content" => "Travailler avec et aux côtés des populations burkinabè pour 
         le respect et la protection de leur dignité"
     ];
@@ -63,14 +65,14 @@ Route::get('objectifs', function () {
 
 
 
-            <p><i class="far fa-check-circle text-primary me-3"></i> Promouvoir les droits humains, la cohesion sociale, la décentralisation et la gouvernance locale en contribuant à 
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i> Promouvoir les droits humains, la cohesion sociale, la décentralisation et la gouvernance locale en contribuant à 
             l’enracinement dune culture démocratique et citoyenne, en défendant les droits et libertés humains</p>
-            <p><i class="far fa-check-circle text-primary me-3"></i>Promouvoir l’autonomisation de la femme et du jeune en vue de leur pleine partcicipation aux actions de développement 
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Promouvoir l’autonomisation de la femme et du jeune en vue de leur pleine partcicipation aux actions de développement 
             au niveau local</p>
-            <p><i class="far fa-check-circle text-primary me-3"></i>Promouvoir des systèmes alimentaires durables à travers le renforcement de la sécurisation 
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Promouvoir des systèmes alimentaires durables à travers le renforcement de la sécurisation 
             foncière et de la protection des ressources naturelles pour une souveraineté alimentaire
             </p>
-            <p><i class="far fa-check-circle text-primary me-3"></i>Fournir une assistance technique adéquate dans ses domaines de compétence à toute personne, 
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Fournir une assistance technique adéquate dans ses domaines de compétence à toute personne, 
             structure ou organisation nationale ou internationale.
             </p>'
     ];
@@ -84,6 +86,15 @@ Route::get('organisation', function () {
     ];
     return view('organisation', compact('datas'));
 })->name('organisation');
+
+Route::get('lesmembres', function () {
+    $datas = [
+        "class" => "bi-people-fill",
+        "title" => "Membres",
+        "content" => ""
+    ];
+    return view('membre',compact('datas'));
+})->name('lesmembres');
 
 Route::get('equipes', function () {
     $datas = [
@@ -108,11 +119,6 @@ Route::get('/home/partenaires', function () {
     $datas = [1,2,3,4];
     return view('dashboard.partenaire', compact('datas'));
 })->name('partenaires');
-
-Route::get('/home/adherents', function () {
-    $datas = [1,2,3,4];
-    return view('dashboard.adherent', compact('datas'));
-})->name('adherents');
 
 Route::get('/home/projets', function () {
     $datas = [1,2,3,4];
@@ -198,6 +204,10 @@ Route::get('sendMail', function () {
 Route::get('/dashboard/membres', [PersonnelController::class, 'membres'])->name('membres');
 Route::post('/dashboard/membres', [PersonnelController::class, 'create'])->name('createPersonnel');
 Route::get('/dashboard/deletePersonnel/{slug}', [PersonnelController::class, 'deletePersonnel'])->name('deletePersonnel');
+
+Route::post('/adhesion', [AdhesionController::class, 'create'])->name('createAdhesion');
+Route::get('/dashboard/deleteAdherent/{slug}', [AdhesionController::class, 'deleteAdherent'])->name('deleteAdherent');
+Route::get('/dashboard/adhesion', [AdhesionController::class, 'adhesion'])->name('adherents');
 
 Route::get('{id}', function () {
     $datas = [

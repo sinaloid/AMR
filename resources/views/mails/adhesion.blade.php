@@ -156,9 +156,10 @@
             width: 570px;
         }
 
-        .text-bold{
+        .text-bold {
             font-weight: bold;
         }
+
         /* Subcopy */
 
         .subcopy {
@@ -194,19 +195,19 @@
             text-decoration: underline;
         }
 
-        .circle{
-            display: inline-block; 
-            background:#ffffff; 
-            padding:8px; 
+        .circle {
+            display: inline-block;
+            background: #ffffff;
+            padding: 8px;
             border: 1px solid transparent;
             border-radius: 50%
         }
 
-        .bg-primary{
-            background-color: #f07f45 
+        .bg-primary {
+            background-color: #f07f45
         }
 
-        .bg-dark{
+        .bg-dark {
             background-color: #2d3748;
             color: #ffffff
         }
@@ -346,18 +347,18 @@
                 <table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
                         <td>
-                            <table class="footer bg-primary" align="center" width="570" cellpadding="0" cellspacing="0"
-                                role="presentation">
-                                
+                            <table class="footer bg-primary" align="center" width="570" cellpadding="0"
+                                cellspacing="0" role="presentation">
+
                                 <tr>
                                     <td class="content-cell" align="center">
                                         <div class="circle">
                                             <a href="{{ config('app.url') }}" style="display: inline-block;">
-                                                <img width="100px" src="{{ asset('assets/img/logo.png') }}" class="logo"
-                                                    alt="AMR-BURKINA">
+                                                <img width="100px" src="{{ asset('assets/img/logo.png') }}"
+                                                    class="logo" alt="AMR-BURKINA">
                                             </a>
                                         </div>
-                                        
+
                                     </td>
                                 </tr>
                             </table>
@@ -372,12 +373,10 @@
                                 <!-- Body content -->
                                 <tr>
                                     <td class="content-cell">
-                                        <h1>Votre compte a été créer avec succès</h1>
-                                        Vous pouvez désormais vous connecter sur la plateforme de <a href="{{ config('app.url') }}">AMR Burkina</a>
-                                        en utilisant votre adresse email : <span class="text-bold">{{$data['email']}}</span> et
-                                        votre mot de passe : <span class="text-bold">{{$data['mdp']}}</span>.
-                                        Une fois connecté, pensez à modifier votre mot de passe dans les 
-                                        paramètres de notre plateforme
+                                        <h1>Votre demande d'adhésion a été réçu avec succès</h1>
+                                        Veuillez trouver en pièces jointes le règlement intérieur, le status et un
+                                        formulaire d'adhésion de l'AMR Burkina que vous devriez remplir et signer puis nous
+                                        le renvoyer par email
                                         <table class="subcopy" width="100%" cellpadding="0" cellspacing="0"
                                             role="presentation">
                                             <tr>

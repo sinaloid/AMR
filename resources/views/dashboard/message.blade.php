@@ -21,7 +21,7 @@
                         <div class="flex-grow-1">
                             <div class="d-flex align-items-center">
                                 <div class="d-inline-block mr-3">
-                                    <img width="80px" class="rounded-circle" src="{{secure_asset('assets/img/undraw_profile_1.svg')}}"
+                                    <img width="80px" class="rounded-circle" src="{{asset('assets/img/undraw_profile_1.svg')}}"
                                         alt="...">
                                     <div class="status-indicator bg-success"></div>
                                 </div>

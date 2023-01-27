@@ -7,29 +7,29 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
-use App\Models\User;
+use App\Models\Adhesion;
 
-class PersonnelController extends Controller
+class AdhesionController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except' => ['create']]);
     }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function membres()
+    public function adhesion()
     {
-        $datas = User::all();
+        $datas = Adhesion::all();
 
-        return view('dashboard.membre', compact('datas'));
+        return view('dashboard.adherent', compact('datas'));
     }
 
     public function index()
     {
-        $datas = User::all();
+        $datas = Adhesion::all();
 
         return view('dashboard.membre');
     }
@@ -41,25 +41,44 @@ class PersonnelController extends Controller
      */
     public function create(Request $request)
     {
-        $pwd = $request['password'] = Str::random(10);
-        $request['password'] = Hash::make($request['password']);
+        //dd($request->all());
+        //$pwd = $request['password'] = Str::random(10);
+        //$request['password'] = Hash::make($request['password']);
         $request['slug'] = Str::slug(Str::random(10));
 
-        $user = User::create($request->all());
+        $user = Adhesion::create($request->all());
            
             $to = $user->email;
             $subject = 'Bienvenue chez AMR BURKINA';
             $data = [
                 'email' => $user->email,
-                "mdp" => $pwd,
+                "mdp" => "",
                 "details" =>"Cordialement"
             ];
+
+            $files = [
+                public_path('files/adhesion/formulaire_d_ahdesion.doc'),
+                public_path('files/adhesion/reglement_amr.pdf'),
+                public_path('files/adhesion/formulaire_d_ahdesion.doc'),
+                public_path('attachments/statut_amr.pdf'),
+            ];
             
-            Mail::send('email', compact('data'), function ($message) use ($to, $subject) {
-            $message->to($to)->subject($subject);});
+            Mail::send('mails.adhesion', compact('data'), function ($message) use ($to, $subject) {
+            
+                $files = [
+                    public_path('files/adhesion/reglement_amr.pdf'),
+                    public_path('files/adhesion/formulaire_d_ahdesion.doc'),
+                    public_path('files/adhesion/statut_amr.pdf'),
+                ];
+                $message->to($to)->subject($subject);
+                foreach ($files as $file){
+                    $message->attach($file);
+                }   
+            
+            });
             //notify()->success('Laravel Notify is awesome!');
             notify()->preset('user-created');
-            return redirect()->route('membres');;
+            return redirect()->route('index');;
         
     }
 
@@ -114,9 +133,9 @@ class PersonnelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function deletePersonnel($slug)
+    public function deleteAdherent($slug)
     {
-        $personnel = User::where('slug',$slug);
+        $personnel = Adhesion::where('slug',$slug);
         $tmp = $personnel->first();
         if(isset($tmp) && Auth::user()->authorisation == 0){
             $personnel->delete();
