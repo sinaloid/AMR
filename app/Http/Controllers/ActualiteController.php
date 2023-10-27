@@ -96,7 +96,7 @@ class ActualiteController extends Controller
             'slug' => 'required|string|max:8',
             'user_id' => 'required|integer',
             'date' => 'required|string|max:255',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:10240',
             'description' => 'required|string',
         ]);
  
