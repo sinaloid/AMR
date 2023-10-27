@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\PersonnelController;
 use App\Http\Controllers\AdhesionController;
+use App\Http\Controllers\CarburantController;
+use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\ActiviteController;
+use App\Http\Controllers\ActualiteController;
+use App\Http\Controllers\ParticipantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,14 +33,18 @@ Route::get('apropos', function () {
     return view('about');
 })->name('apropos');
 
+
 Route::get('visions', function () {
     $datas = [
         "class" => "bi-eye-fill",
         "title" => "Vision",
-        "content" => "Un monde rural qui connait ses droits, travaille à leur 
-        effectivité et participe pleinement aux actions de développement"
+        /*"content" => "Un monde rural qui connait ses droits, travaille à leur 
+        effectivité et participe pleinement aux actions de développement"*/
+        "content" => "Un monde où les citoyens et les citoyennes sont pleinement 
+        impliqués dans les actions de développement durable, sont informés de leurs 
+        droits et devoirs, travaillent à leur effectivité et où personne n'est laissé pour compte."
     ];
-    return view('content', compact('datas'));
+    return view('vision', compact('datas'));
 })->name('visions');
 Route::get('valeurs', function () {
     $datas = [
@@ -50,8 +59,7 @@ Route::get('missions', function () {
     $datas = [
         "class" => "bi-award-fill",
         "title" => "Mission",
-        "content" => "Travailler avec et aux côtés des populations burkinabè pour 
-        le respect et la protection de leur dignité"
+        "content" => "Travailler avec et aux cotés des citoyens et des citoyennes dans le respect de la dignité humaine."
     ];
     return view('content', compact('datas'));
 })->name('missions');
@@ -61,20 +69,17 @@ Route::get('objectifs', function () {
         "class" => "far fa-check-circle",
         "title" => "objectifs",
         "content" => '
-
-
-
-
-            <p><i class="bi bi-caret-right-fill text-primary me-3"></i> Promouvoir les droits humains, la cohesion sociale, la décentralisation et la gouvernance locale en contribuant à 
-            l’enracinement dune culture démocratique et citoyenne, en défendant les droits et libertés humains</p>
-            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Promouvoir l’autonomisation de la femme et du jeune en vue de leur pleine partcicipation aux actions de développement 
-            au niveau local</p>
-            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Promouvoir des systèmes alimentaires durables à travers le renforcement de la sécurisation 
-            foncière et de la protection des ressources naturelles pour une souveraineté alimentaire
+            <p>contribuer à l\'éveil des communautés et l’accroissement de la participation citoyenne des femmes et des jeunes pour un meilleur accès aux services sociaux de base dans une société de justice et de paix.</p>
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i> Impulser une gouvernance locale participative, inclusive pour la promotion des droits humains, l’enracinement de la décentralisation et la démocratie.</p>
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Autonomiser les femmes et les jeunes pour leur pleine participation aux actions de développement</p>
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i> Renforcer la souveraineté alimentaire et nutritionnelle des communautés à la base par une agriculture saine, responsable et durable.
             </p>
-            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Fournir une assistance technique adéquate dans ses domaines de compétence à toute personne, 
-            structure ou organisation nationale ou internationale.
-            </p>'
+            
+
+            <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Bâtir une résilience forte des communautés affectées par les différents chocs et leurs hôtes par la protection des moyens d’existence pour une coexistence pacifique.
+            </p>
+            '
+            
     ];
     return view('content', compact('datas'));
 })->name('objectifs');
@@ -104,11 +109,12 @@ Route::get('equipes', function () {
     ];
     return view('equipe',compact('datas'));
 })->name('equipes');
+Route::get('list-des-actualites', [ActualiteController::class, 'allActualite'])->name('allActualite');
+Route::get('detail-actualite/{slug}', [ActualiteController::class, 'detailActualite'])->name('detailActualite');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
 
 Route::get('/home/personnel', function () {
     $datas = [1,2,3,4];
@@ -146,10 +152,6 @@ Route::get('/home/mes-rapports', function () {
     return view('dashboard.rapport', compact('datas'));
 })->name('mes-rapports');
 
-Route::get('/home/actualites', function () {
-    $datas = [1,2,3,4];
-    return view('dashboard.actualite', compact('datas'));
-})->name('actualites');
 
 Route::get('/home/messages', function () {
     $datas = [1,2,3,4];
@@ -208,6 +210,12 @@ Route::get('/dashboard/deletePersonnel/{slug}', [PersonnelController::class, 'de
 Route::post('/adhesion', [AdhesionController::class, 'create'])->name('createAdhesion');
 Route::get('/dashboard/deleteAdherent/{slug}', [AdhesionController::class, 'deleteAdherent'])->name('deleteAdherent');
 Route::get('/dashboard/adhesion', [AdhesionController::class, 'adhesion'])->name('adherents');
+
+Route::resource('/dashboard/carburant', CarburantController::class);
+Route::resource('/dashboard/projet', ProjetController::class);
+Route::resource('/dashboard/activite', ActiviteController::class);
+Route::resource('/dashboard/actualite', ActualiteController::class);
+Route::resource('/dashboard/participant', ParticipantController::class);
 
 Route::get('{id}', function () {
     $datas = [

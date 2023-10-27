@@ -86,7 +86,7 @@
                     <p class="d-inline-block border rounded-pill py-1 px-4">À propos</p>
                     <h1 class="mb-4">Qui sommes nous ?</h1>
                     <p class="mb-4 text-justify">
-                        L’association monde rural est une association apolitique, non confessionnelle
+                        L’Association Monde Rural est une association apolitique, non confessionnelle
                         et à but non lucratif régi par la loi <span class="fw-bold">n 064-2015 CNT du 20 octobre
                             2015</span>. <br>
                         Elle a été enregistrée sous le numéro <span class="fw-bold">n 000000135701 du 17 mars 2017</span>.
@@ -319,8 +319,9 @@
                             style="width: 65px; height: 65px;">
                             <i class="bi bi-people-fill text-primary fs-4"></i>
                         </div>
-                        <p class="mb-4 fw-bold">Voir les actions de l'AMR en matière de :</p>
-                        <h4 class="mb-3">Droits Humains, cohésion sociale, décentralisation et gouvernance locale</h4>
+                        <p class="mb-4 fw-bold">Voir les actions de l'AMR en matière :</p>
+                        <h4 class="mb-3">De la gouvernance locale, de la décentralisation et des droits humains (GovLoc)
+                        </h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -331,8 +332,11 @@
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
                         <p class="mb-4 fw-bold">L'AMR oeuvre pour :</p>
-                        <h4 class="mb-3">La promotion de l’autonomisation politique, économique de la femme, du jeune
-                            et de la santé de l’enfant</h4>
+                        <h4 class="mb-3">
+
+                            Le genre et l’inclusion sociale (Santé communautaire – ANJE- / Empowerment des femmes,
+                            entreprenariat des jeunes) (G.I.S.)
+                        </h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -345,7 +349,10 @@
                         <p class="mb-4 fw-bold">
                             Découvrir les actions de l' AMR pour les:
                         </p>
-                        <h4 class="mb-3">Systèmes alimentaires durables</h4>
+                        <h4 class="mb-3">
+                            Les systèmes alimentaires durables (agroécologie, foncier, environnement et changements climatiques ;
+            plaidoyer pour la nutrition et le WASH) (S.A.D.)
+                        </h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
@@ -356,34 +363,13 @@
                             <i class="bi bi-disc-fill text-primary fs-4"></i>
                         </div>
                         <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
-                        <h4 class="mb-3">Axe transversaux : l’environnement durable et le changement climatique</h4>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                            style="width: 65px; height: 65px;">
-                            <i class="fa fa-brain text-primary fs-4"></i>
-                        </div>
-                        <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
-                        <h4 class="mb-3">Axe transversaux : le genre, la santé communautaire,
+                        <h4 class="mb-3">
+                            L’humanitaire, l’urgences et la cohésion sociale (Do No Harm, Leaving No One Behind) (H.U.CO.S.)
                         </h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
-                            style="width: 65px; height: 65px;">
-                            <i class="fa fa-vials text-primary fs-4"></i>
-                        </div>
-                        <p class="mb-4 fw-bold">Comprendre les axes transversaux de l' AMR</p>
-                        <h4 class="mb-3">Axe transversaux : le Leaving no one behind (LNOB)
-                        </h4>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -455,10 +441,10 @@
                     </div>
                 </div>
                 <!--div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                                                    <div class="position-relative h-100">
-                                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
-                                                    </div>
-                                                </div-->
+                                                        <div class="position-relative h-100">
+                                                            <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
+                                                        </div>
+                                                    </div-->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="owl-carousel header-carousel" style="max-height: 500px;">
                         <div class="owl-carousel-item position-relative">
@@ -1177,7 +1163,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Contacts</p>
                     <h1 class="mb-4">Besoin d'informations ? Alors contactez-nous</h1>
-                    
+
                     <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                             style="width: 55px; height: 55px;">

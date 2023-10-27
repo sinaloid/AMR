@@ -34,7 +34,7 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/css/sb-admin-2.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">    
-
+    @yield('script')
 </head>
 
 <body>
@@ -130,14 +130,14 @@
                             Route::currentRouteName() == 'axes-transverseaux') active @endif"
                         data-bs-toggle="dropdown">Thématiques</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0 bg-light">
-                        <a href="droits" class="dropdown-item">Droits Humains, cohésion sociale, décentralisation et
-                            gouvernance locale</a>
-                        <a href="promotion" class="dropdown-item">La promotion de l’autonomisation politique et
-                            économique de la femme et du jeune et la santé de l’enfant</a>
-                        <a href="systemes" class="dropdown-item">Systèmes alimentaires durables</a>
-                        <a href="axes-transverseaux" class="dropdown-item">Axes Transversaux</a>
+                        <a href="promotion" class="dropdown-item">G.I.S.</a>
+                        <a href="systemes" class="dropdown-item">S.A.D.</a>
+                        <a href="droits" class="dropdown-item">GovLoc</a>
+                        <a href="axes-transverseaux" class="dropdown-item">H.U.CO.S.</a>
                     </div>
                 </div>
+                <a href="{{ route('allActualite') }}"
+                    class="nav-item nav-link @if (Route::currentRouteName() == 'allActualite') active @endif">Actualités</a>
                 <a href="{{ route('apropos') }}"
                     class="nav-item nav-link @if (Route::currentRouteName() == 'apropos') active @endif">À propos</a>
                 <a href="{{ route('contact') }}"

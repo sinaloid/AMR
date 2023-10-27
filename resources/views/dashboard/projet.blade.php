@@ -17,7 +17,7 @@
             <div class="card-header py-1 d-flex">
                 <h6 class="d-inline-block font-weight-bold text-primary py-2">Liste des projets terminés</h6>
                 <button class="btn btn-primary d-inline-block ms-auto fw-bold" data-bs-toggle="modal"
-                    data-bs-target="#createProjet"><i class="bi bi-plus-circle-fill"></i> Ajouter un projet</button>
+                    data-bs-target="#create"><i class="bi bi-plus-circle-fill"></i> Ajouter un projet</button>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -26,8 +26,9 @@
                             <tr>
                                 <th>Nom du projet</th>
                                 <th>Date de début</th>
-                                <th>Durée du projet</th>
                                 <th>Date de fin</th>
+                                <th>Statut</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -35,145 +36,157 @@
                             <tr>
                                 <th>Nom du projet</th>
                                 <th>Date de début</th>
-                                <th>Durée du projet</th>
                                 <th>Date de fin</th>
+                                <th>Statut</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </tr>
                         </tfoot>
                         <tbody>
 
                             @foreach ($datas as $data)
-                                <tr>
-                                    <td>Lorem ipsum dolor sit</td>
-                                    <td>12/02/2023</td>
-                                    <td>3 mois</td>
-                                    <td>13/05/2023</td>
-                                    <!--td>ici on aurra la sommes des cotisation suite à particition atelier de AMR et de PDF</td-->
-                                    <td>
-                                        <span class="d-inline-block"><i class="bi bi-eye-fill"></i></span>
-                                        <span class="d-inline-block" data-bs-toggle="modal"
-                                            data-bs-target="#editprojet{{ $data }}"><i
-                                                class="bi bi-pencil-square"></i></span>
-                                        <span class="d-inline-block"><i class="bi bi-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <!-- The Modal -->
-                                <div class="modal fade" id="editprojet{{ $data }}">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                                        <div class="modal-content">
+                                @if (!$data->is_delete)
+                                    <tr>
+                                        <td>{{ $data->name }}</td>
+                                        <td>{{ $data->startDate }}</td>
+                                        <td>{{ $data->endDate }}</td>
+                                        <td>{{ $data->status }}</td>
+                                        <td>{{ $data->description }}</td>
+                                        <!--td>ici on aurra la sommes des cotisation suite à particition atelier de AMR et de PDF</td-->
+                                        <td>
+                                            <a href="{{route("projet.show",$data->slug)}}" class="d-inline-block"><i class="bi bi-eye-fill"></i></a>
+                                            <span class="d-inline-block" data-bs-toggle="modal"
+                                                data-bs-target="#update{{ $data->slug }}"><i
+                                                    class="bi bi-pencil-square"></i></span>
+                                            <form class="d-inline" method="POST"
+                                                action="{{ route('projet.destroy', $data->id) }}">
+                                                <button type="submit" class="d-inline-block"><i
+                                                        class="bi bi-trash"></i></button>
+                                                @csrf
+                                                @method('delete')
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <!-- The Modal -->
+                                    <div class="modal fade" id="update{{ $data->slug }}">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                            <div class="modal-content">
 
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Modification du projet</h4>
-                                                <button type="button" class="btn-close"
-                                                    data-bs-dismiss="modal"></button>
-                                            </div>
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modification du projet</h4>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
 
-                                            <!-- Modal body -->
-                                            <div class="modal-body mb-3">
-                                                <form action="">
-                                                    <div class="mb-3 mt-3">
-                                                        <label for="projet-edt" class="form-label">Nom du projet:</label>
-                                                        <input type="text" class="form-control" id="projet-edt"
-                                                            placeholder="Entrer le nom du projet" name="projet">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="date_debut-edt" class="form-label">Date de début:</label>
-                                                        <input type="date" class="form-control" id="date_debut-edt"
-                                                            name="date_debut">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="duree_projet-edt" class="form-label">Durée du
-                                                            projet:</label>
-                                                        <input type="text" class="form-control" id="duree_projet-edt"
-                                                            name="duree_projet">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="date_fin-edt" class="form-label">Date de fin:</label>
-                                                        <input type="date" class="form-control" id="date_fin-edt"
-                                                            name="date_fin">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="niveau-edt" class="form-label">Niveau d'excécution du
-                                                            projet:</label> <br>
-                                                        <input class="d-block" type="range" value="0" id="niveau-edt"
-                                                            min="0" max="100"
-                                                            oninput="this.nextElementSibling.value = this.value">
-                                                        <output>0</output>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="fichier-edt" class="form-label">Ajouter un
-                                                            fichier:</label>
-                                                        <input type="file" class="form-control" id="fichier-edt"
-                                                            name="fichier">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="description-edt" class="form-label">Description du
-                                                            projet:</label>
-                                                        <textarea class="form-control" id="description" name="description-edt" id="" cols="30" rows="3"></textarea>
-                                                    </div>
-                                                    
+                                                <!-- Modal body -->
+                                                <div class="modal-body mb-3">
+                                                    <form action="{{ route('projet.update', $data->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('put')
+                                                        <div class="mb-3 mt-3">
+                                                            <label for="name" class="form-label">Nom du projet:</label>
+                                                            <input type="text" class="form-control" id="name"
+                                                                placeholder="Entrer le nom du projet" name="name"
+                                                                value="{{ $data->name }}">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="startDate" class="form-label">Date de début du
+                                                                projet:</label>
+                                                            <input type="date" class="form-control" id="startDate"
+                                                                name="startDate" value="{{ $data->startDate }}">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="endDate" class="form-label">Date de fin du
+                                                                projet:</label>
+                                                            <input type="date" class="form-control" id="endDate"
+                                                                name="endDate" value="{{ $data->endDate }}">
+                                                        </div>
+                                                        <!--div class="mb-3">
+                                                                <label for="niveau-edt" class="form-label">Niveau d'excécution du
+                                                                    projet:</label> <br>
+                                                                <input class="d-block" type="range" value="0" id="niveau-edt"
+                                                                    min="0" max="100"
+                                                                    oninput="this.nextElementSibling.value = this.value">
+                                                                <output>0</output>
+                                                            </div-->
+                                                        <div class="mb-3">
+                                                            <label for="fichier-edt" class="form-label">Ajouter un
+                                                                fichier:</label>
+                                                            <input type="file" class="form-control" id="fichier-edt"
+                                                                name="fichier">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="description" class="form-label">Description du
+                                                                projet:</label>
+                                                            <textarea class="form-control" id="description" name="description" id="description" cols="30" rows="3">{{ $data->description }}</textarea>
+                                                        </div>
 
-                                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
-                                                    <button  class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                                </form>
+
+                                                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                                        <button class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Annuler</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                @endif
                             @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="createProjet">
+        <div class="modal fade" id="create">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-    
+
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Création d'un nouveau projet</h4>
+                        <h4 class="modal-title">Ajout d'un projet</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-    
+
                     <!-- Modal body -->
                     <div class="modal-body mb-3">
-                        <form action="">
+                        <form action="{{ route('projet.store') }}" method="POST">
+                            @csrf
                             <div class="mb-3 mt-3">
-                                <label for="projet" class="form-label">Nom du projet:</label>
-                                <input type="text" class="form-control" id="projet" placeholder="Entrer le nom du projet"
-                                    name="projet">
+                                <label for="name" class="form-label">Nom du projet:</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Entrer le nom du projet" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="date_debut" class="form-label">Date de début:</label>
-                                <input type="date" class="form-control" id="date_debut" name="date_debut">
+                                <label for="startDate" class="form-label">Date de début du projet:</label>
+                                <input type="date" class="form-control" id="startDate" name="startDate">
                             </div>
                             <div class="mb-3">
-                                <label for="duree_projet" class="form-label">Durée du projet:</label>
-                                <input type="text" class="form-control" id="duree_projet" name="duree_projet">
+                                <label for="endDate" class="form-label">Date de fin du projet:</label>
+                                <input type="date" class="form-control" id="endDate" name="endDate">
+                            </div>
+                            <!--div class="mb-3">
+                                        <label for="niveau-edt" class="form-label">Niveau d'excécution du
+                                            projet:</label> <br>
+                                        <input class="d-block" type="range" value="0" id="niveau-edt"
+                                            min="0" max="100"
+                                            oninput="this.nextElementSibling.value = this.value">
+                                        <output>0</output>
+                                    </div-->
+                            <div class="mb-3">
+                                <label for="fichier-edt" class="form-label">Ajouter un
+                                    fichier:</label>
+                                <input type="file" class="form-control" id="fichier-edt" name="fichier">
                             </div>
                             <div class="mb-3">
-                                <label for="date_fin" class="form-label">Date de fin:</label>
-                                <input type="date" class="form-control" id="date_fin" name="date_fin">
-                            </div>
-                            <div class="mb-3">
-                                <label for="description" class="form-label">Niveau d'excécution du projet:</label> <br>
-                                <input class="d-block" type="range" value="0" min="0" max="100"
-                                    oninput="this.nextElementSibling.value = this.value">
-                                <output>0</output>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fichier" class="form-label">Ajouter un fichier:</label>
-                                <input type="file" class="form-control" id="fichier" name="fichier">
-                            </div>
-                            <div class="mb-3">
-                                <label for="description" class="form-label">Description du projet:</label>
+                                <label for="description" class="form-label">Description du
+                                    projet:</label>
                                 <textarea class="form-control" id="description" name="description" id="" cols="30" rows="3"></textarea>
                             </div>
-    
-                            <button type="submit" class="btn btn-primary">Ajouter</button>
-                            <button  class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+
+
+                            <button type="submit" class="btn btn-primary">Enregistrer</button>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                         </form>
                     </div>
                 </div>

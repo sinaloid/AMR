@@ -22,6 +22,17 @@ body{
     font-weight: 900 !important;
 }
 
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+.fs-14{
+    font-size: 14px;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -550,3 +561,24 @@ body{
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.img-max-h{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.img-carre{
+    width: 100px;
+    height: 100px;
+}
+
+.text-container1 {
+  width: 100%; /* Largeur de votre conteneur de texte */
+  height: 100px; /* Largeur de votre conteneur de texte *
+  /*white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Masque le contenu débordant du conteneur */
+  text-overflow: ellipsis; /* Affiche "..." à la fin du texte masqué */
+}
+
+.ck-editor__editable {min-height: 500px;}

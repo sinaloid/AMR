@@ -68,6 +68,12 @@ return [
             'model'   => 'connect',
             'title'   => 'Envoi réussi !',
         ],
+        'success' => [
+            'message' => 'Les données ont bien été enregistrer',
+            'type'    => 'success',
+            'model'   => 'connect',
+            'title'   => 'Enregistrement réussi !',
+        ],
         'delete' => [
             'message' => 'Les données ont été supprimer',
             'type'    => 'success',
