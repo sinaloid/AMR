@@ -20,7 +20,7 @@
                                 alt="">
                         </div>
                         <div class="py-2">
-                            <a href="{{ route('detailActualite', $datas[0]->slug) }}" class="fw-bold fs-20">
+                            <a href="{{ route('detailActualite', $datas[0]->slug) }}" class="fw-bold fs-20 text-link">
                                 {{ $datas[0]->titre }}
                             </a>
                         </div>
@@ -36,7 +36,7 @@
 
                             <div class="w-100">
                                 <div class="fw-bold text-justify fs-18">
-                                    <a href="{{ route('detailActualite', $item->slug) }}" class="fw-bold fs-20">
+                                    <a href="{{ route('detailActualite', $item->slug) }}" class="fw-bold fs-20 text-link">
                                         {{ $item->titre }}
                                     </a>
                                 </div>
@@ -48,10 +48,10 @@
                             </div>
                         </div>
                     @endforeach
-                    <div class="d-flex">
+                    <!--div class="d-flex">
                         <a class="ms-auto" href="#">Voir toutes les actualités<i
                                 class="fa fa-arrow-right ms-3"></i></a>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
 
                             <div class="w-100">
                                 <div class="fw-bold text-justify fs-18">
-                                    <a href="{{ route('detailActualite', $item->slug) }}" class="fw-bold fs-20">
+                                    <a href="{{ route('detailActualite', $item->slug) }}" class="fw-bold fs-20 text-link">
                                         {{ $item->titre }}
                                     </a>
                                 </div>

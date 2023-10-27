@@ -41,7 +41,17 @@ body{
     z-index: 99;
 }
 
+.text-primary {
+    color: var(--primary);
+}
 
+.text-link {
+    color: var(--dark);
+}
+
+.text-link:hover {
+    color: var(--primary);
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
