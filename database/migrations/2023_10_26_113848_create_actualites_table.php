@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date("date");
             $table->boolean("is_delete")->default(0);
             $table->string("image");
-            $table->text("description");
+            $table->longText("description");
             $table->timestamps();
 
             $table->unsignedBigInteger('user_id');
