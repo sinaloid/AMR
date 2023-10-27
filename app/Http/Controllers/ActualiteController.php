@@ -39,8 +39,14 @@ class ActualiteController extends Controller
         //$datas = Auth::user()->with('actualites')->first();
         //$datas = User::all();
         //dd($datas);
+        $categories = [
+            "La gouvernance locale...[GovLoc]",
+            "Le genre et l’inclusion sociale...[G.I.S.]",
+            "Les systèmes alimentaires durables...[S.A.D.]",
+            "L’humanitaire, l’urgences et la cohésion sociale...[H.U.CO.S.]"
+        ];
         $datas = Actualite::orderByDesc('id')->where('is_delete', false)->get();
-        return view('actualite', compact("datas"));
+        return view('actualite', compact("datas","categories"));
     }
 
     public function detailActualite($slug = "")
@@ -49,10 +55,16 @@ class ActualiteController extends Controller
         //$datas = Auth::user()->with('actualites')->first();
         //$datas = User::all();
         //dd($datas);
+        $categories = [
+            "La gouvernance locale...[GovLoc]",
+            "Le genre et l’inclusion sociale...[G.I.S.]",
+            "Les systèmes alimentaires durables...[S.A.D.]",
+            "L’humanitaire, l’urgences et la cohésion sociale...[H.U.CO.S.]"
+        ];
         $datas = Actualite::orderByDesc('id')->where('is_delete', false)->get();
         $actualite = Actualite::where('slug', $slug)->first();
 
-        return view('actualiteDetail', compact("datas","actualite"));
+        return view('actualiteDetail', compact("datas","actualite","categories"));
     }
     
 
@@ -85,7 +97,7 @@ class ActualiteController extends Controller
             'user_id' => 'required|integer',
             'date' => 'required|string|max:255',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'description' => 'required|string|max:100000',
+            'description' => 'required|string',
         ]);
  
         if ($validator->fails()) {
