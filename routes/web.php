@@ -9,6 +9,7 @@ use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ActiviteController;
 use App\Http\Controllers\ActualiteController;
 use App\Http\Controllers\ParticipantController;
+use App\Http\Controllers\FichierAMRController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -212,6 +213,7 @@ Route::get('/dashboard/deleteAdherent/{slug}', [AdhesionController::class, 'dele
 Route::get('/dashboard/adhesion', [AdhesionController::class, 'adhesion'])->name('adherents');
 
 Route::resource('/dashboard/carburant', CarburantController::class);
+Route::resource('/dashboard/fichier', FichierAMRController::class);
 Route::resource('/dashboard/projet', ProjetController::class);
 Route::resource('/dashboard/activite', ActiviteController::class);
 Route::resource('/dashboard/actualite', ActualiteController::class);
