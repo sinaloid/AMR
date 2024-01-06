@@ -96,7 +96,7 @@
                         d’activités à savoir:
 
                     </p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>De la gouvernance locale, de la décentralisation et des droits humains (GovLoc)</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>La gouvernance locale, de la décentralisation et des droits humains (GovLoc)</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Le genre et l’inclusion sociale (Santé communautaire – ANJE- / Empowerment des femmes, entreprenariat des jeunes) (G.I.S.)</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>Les systèmes alimentaires durables (agroécologie, foncier, environnement et changements climatiques ; plaidoyer pour la nutrition et le WASH) (S.A.D.)</p>
                     <p><i class="far fa-check-circle text-primary me-3"></i>L’humanitaire, l’urgences et la cohésion sociale (Do No Harm, Leaving No One Behind) (H.U.CO.S.)</p>
