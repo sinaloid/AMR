@@ -604,18 +604,7 @@
                         <span class="fst-italic"> Assistant Méthodologique <br>Administrateur Civil</span>
                     </div>
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/5.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BATIONO Mickael</h5>
-                        <span class="fst-italic">Chargé de Suivi Evaluation – Capitalisation et Apprentissage
-                            <br>Statisticien – Analyste Data</span>
-                    </div>
-                </div>
+                
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
                         src="{{ asset('assets/img/membres/6.jpg') }}" style="width: 200px; height: 200px;">
@@ -629,22 +618,7 @@
                     </div>
                 </div>
 
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/7.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <P>
-                            Je suis Aminata SAWADOGO, titulaire d’une licence option Gestion des Ressources Humaines.
-                            A l’AMR, en tant qu’Assistante du Coordonnateur National, ma mission est de faciliter la tâche
-                            de ce dernier par une meilleure organisation et gestion de son agenda. Au mieux de le suppléer
-                            dans certaines actions et d’assurer un management participatif des ressources humaines à motiver
-                            et permettre à l’AMR d’être une ONG internationale.
-
-                        </P>
-                        <h5 class="mb-1">SAWADOGO Aminata</h5>
-                        <span class="fst-italic">Assistante de Coordination</span>
-                    </div>
-                </div>
+                
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
                         src="{{ asset('assets/img/membres/43.jpg') }}" style="width: 200px; height: 200px;">
@@ -683,40 +657,8 @@
                         <span class="fst-italic">Assistante Comptable</span>
                     </div>
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/10.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis Wendpuiré Julie Viviane YODA, Conseillère en Sciences et Techniques de l'Information et
-                            de la Communication,
-                            avec également une expérience en Journalisme. Mon engagement à participer activement aux
-                            activités qui accompagneront
-                            les collectivités territoriales dans la promotion de la participation citoyenne et de la
-                            redevabilité, dans la transparence
-                            de la gestion locale demeure le même que celui qui m'animait dès le premier contact avec l'AMR.
-                            J'entends donc travailler à
-                            implémenter les actions de communication pour une meilleure visibilité de l’AMR.
-                        </p>
-                        <h5 class="mb-1">YODA Wendpuire Julie Viviane</h5>
-                        <span class="fst-italic">Communicatrice</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/11.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <P>
-                            Je suis Idriss Fad Abasse GUIRO, Marketer et communicant.
-                            Passionné de communication et de Marketing digital, je m’occupe de la communication digitale de
-                            l’Association Monde Rural. A l’AMR, je veux mieux exercer ma passion.
-
-                        </P>
-                        <h5 class="mb-1">GUIRO Idriss Fad Abasse
-                        </h5>
-                        <span class="fst-italic">Communicateur Commuty Manager AMR </span>
-                    </div>
-                </div>
+                
+                
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
                         src="{{ asset('assets/img/membres/12.jpg') }}" style="width: 200px; height: 200px;">

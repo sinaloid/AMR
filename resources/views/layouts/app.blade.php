@@ -266,12 +266,18 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Thématiques</h5>
-                    <a class="btn btn-link" href="">Droits, cohésion, décentralisation et gouvernance
-                        locale</a>
-                    <a class="btn btn-link" href="">promotion, politique, économique, santé</a>
-                    <a class="btn btn-link" href="">Systèmes alimentaires durables</a>
-                    <a class="btn btn-link" href="">Axes Transversaux</a>
+                    <a class="btn btn-link" href="">La gouvernance locale, de la décentralisation et des droits humains (GovLoc)</a>
+                    <a class="btn btn-link" href="">Le genre et l’inclusion sociale (G.I.S.)</a>
+                    <a class="btn btn-link" href="">Les systèmes alimentaires durables (S.A.D.)</a>
+                    <a class="btn btn-link" href="">L’humanitaire, l’urgences et la cohésion sociale (H.U.CO.S.)</a>
                 </div>
+                
+
+
+
+
+
+
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-light mb-4">Liens rapides</h5>
                     <a class="btn btn-link" href="">Présentation</a>
