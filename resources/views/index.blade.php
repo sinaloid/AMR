@@ -1122,7 +1122,7 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Envoyez-nous un mail maintenant</p>
-                            <h5 class="mb-0">info@amrbf.org</h5>
+                            <h5 class="mb-0">info@amrburkina.org</h5>
                         </div>
                     </div>
                 </div>
