@@ -252,7 +252,7 @@
                     <h5 class="text-light mb-4">Addresse</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>BP 20, Gourcy, Burkina Faso</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+226 73-88-59-09 / 67-36-78-27</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@amrbf.org</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@amrburkina.org</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
                                 class="fab fa-twitter"></i></a>
