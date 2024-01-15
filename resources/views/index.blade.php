@@ -27,6 +27,12 @@
                             <p class="text-light mb-0">Réalisations</p>
                         </div>
                     </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">135</h2>
+                            <p class="text-light mb-0">Partenaires(bénéficiaires)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
