@@ -113,7 +113,14 @@ Route::get('equipes', function () {
 Route::get('list-des-actualites', [ActualiteController::class, 'allActualite'])->name('allActualite');
 Route::get('detail-actualite/{slug}', [ActualiteController::class, 'detailActualite'])->name('detailActualite');
 
-Auth::routes();
+Auth::routes([
+    'login'    => true,
+    'logout'   => true,
+    'register' => false,
+    //'reset'    => true,   // for resetting passwords
+    //'confirm'  => false,  // for additional password confirmations
+    //'verify'   => false,  // for email verification
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
