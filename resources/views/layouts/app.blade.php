@@ -33,7 +33,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/css/sb-admin-2.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">    
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     @yield('script')
 </head>
 
@@ -72,9 +72,8 @@
                             class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i
                             class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" 
-                    href="https://www.linkedin.com/in/amr-burkina-110a2b261/"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.linkedin.com/in/amr-burkina-110a2b261/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i
                             class="fab fa-instagram"></i></a>
                 </div>
@@ -175,11 +174,8 @@
                 @endguest
             </div>
             @guest
-                <button class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-                data-bs-target="#adhesionForm"
-                data-bs-toggle="modal"
-                >Devenir Membre<i
-                        class="fa fa-arrow-right ms-3"></i></button>
+                <button class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" data-bs-target="#adhesionForm"
+                    data-bs-toggle="modal">Devenir Membre<i class="fa fa-arrow-right ms-3"></i></button>
             @endguest
         </div>
     </nav>
@@ -194,50 +190,21 @@
         <div class="modal fade" id="adhesionForm">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-    
+
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 class="modal-title">Devenir membre</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-    
+
                     <!-- Modal body -->
                     <div class="modal-body mb-3">
-                        <form class="user" method="POST" action="{{ route('createAdhesion') }}">
-                            @csrf
-                            
-                            <div class="form-group">
-                                <div class="col-sm-12 mb-3">
-                                    <input type="text" class="form-control form-control-user"
-                                    name="nom" placeholder="Nom">
-                                </div>
-                                <div class="col-sm-12 mb-3">
-                                    <input type="text" class="form-control form-control-user" 
-                                    name="prenom"
-                                        placeholder="Prénom">
-                                </div>
-                                <div class="col-sm-12 mb-3">
-                                    <input type="email" class="form-control form-control-user"
-                                name="email"
-                                    placeholder="Adresse email">
-                                </div>
-                                <div class="col-sm-12 mb-3">
-                                    <input type="text" class="form-control form-control-user"
-                                    name="numero"
-                                        placeholder="Numéro">
-                                </div>
-
-                                <div class="col-sm-12 mb-3">
-                                    <label for="">Date de naissance</label>
-                                    <input type="date" class="form-control form-control-user"
-                                    name="naissance" placeholder="Date de naissance" value="1987-01-01">
-                                </div>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-user btn-block">
-                                Envoyer ma demande
-                            </button>
-                        </form>
+                        Pour nous rejoindre en tant que membre, n'hésitez pas à nous envoyer un courriel à l'adresse
+                        <a class="fw-bold text-primary" href="mailto:info@amrburkina.org">info@amrburkina.org</a> ou à
+                        nous appeler directement au
+                        <a class="fw-bold text-primary" href="tel:+22673885909">+226 73 88 59 09</a> ou au
+                        <a class="fw-bold text-primary" href="tel:+22667367827">+226 67 36 78 27</a>
+                        . Nous serons ravis de vous accueillir dans notre communauté.
                     </div>
                 </div>
             </div>
@@ -266,12 +233,14 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Thématiques</h5>
-                    <a class="btn btn-link" href="">La gouvernance locale, de la décentralisation et des droits humains (GovLoc)</a>
+                    <a class="btn btn-link" href="">La gouvernance locale, de la décentralisation et des droits
+                        humains (GovLoc)</a>
                     <a class="btn btn-link" href="">Le genre et l’inclusion sociale (G.I.S.)</a>
                     <a class="btn btn-link" href="">Les systèmes alimentaires durables (S.A.D.)</a>
-                    <a class="btn btn-link" href="">L’humanitaire, l’urgences et la cohésion sociale (H.U.CO.S.)</a>
+                    <a class="btn btn-link" href="">L’humanitaire, l’urgences et la cohésion sociale
+                        (H.U.CO.S.)</a>
                 </div>
-                
+
 
 
 
@@ -332,7 +301,7 @@
     @notifyJs
     <!-- Template Javascript -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-    
+
 </body>
 
 </html>
