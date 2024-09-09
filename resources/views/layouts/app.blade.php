@@ -122,7 +122,7 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#"
-                        class="nav-link dropdown-toggle 
+                        class="nav-link dropdown-toggle
                     @if (Route::currentRouteName() == 'droits' ||
                             Route::currentRouteName() == 'promotion' ||
                             Route::currentRouteName() == 'systemes' ||
@@ -258,11 +258,12 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
                     <p>Abonnez-vous pour ne rien manquer des actualités de l'AMR</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <form action="{{route('newsletters.store')}}" method="POST" class="position-relative mx-auto" style="max-width: 400px;">
+                        @csrf
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Votre email">
-                        <button type="button" class="btn btn-primary  mt-2 me-2">Souscrire</button>
-                    </div>
+                            placeholder="Votre email" name="email">
+                        <button type="submit" class="btn btn-primary  mt-2 me-2">Souscrire</button>
+                    </form>
                 </div>
             </div>
         </div>

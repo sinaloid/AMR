@@ -10,6 +10,9 @@ use App\Http\Controllers\ActiviteController;
 use App\Http\Controllers\ActualiteController;
 use App\Http\Controllers\ParticipantController;
 use App\Http\Controllers\FichierAMRController;
+use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\PartenaireController;
+use App\Http\Controllers\AgentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +25,7 @@ use App\Http\Controllers\FichierAMRController;
 */
 
 Route::get('/', function () {
-    
+
     return view('index');
 })->name('index');
 
@@ -39,10 +42,10 @@ Route::get('visions', function () {
     $datas = [
         "class" => "bi-eye-fill",
         "title" => "Vision",
-        /*"content" => "Un monde rural qui connait ses droits, travaille à leur 
+        /*"content" => "Un monde rural qui connait ses droits, travaille à leur
         effectivité et participe pleinement aux actions de développement"*/
-        "content" => "Un monde où les citoyens et les citoyennes sont pleinement 
-        impliqués dans les actions de développement durable, sont informés de leurs 
+        "content" => "Un monde où les citoyens et les citoyennes sont pleinement
+        impliqués dans les actions de développement durable, sont informés de leurs
         droits et devoirs, travaillent à leur effectivité et où personne n'est laissé pour compte."
     ];
     return view('vision', compact('datas'));
@@ -75,12 +78,12 @@ Route::get('objectifs', function () {
             <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Autonomiser les femmes et les jeunes pour leur pleine participation aux actions de développement</p>
             <p><i class="bi bi-caret-right-fill text-primary me-3"></i> Renforcer la souveraineté alimentaire et nutritionnelle des communautés à la base par une agriculture saine, responsable et durable.
             </p>
-            
+
 
             <p><i class="bi bi-caret-right-fill text-primary me-3"></i>Bâtir une résilience forte des communautés affectées par les différents chocs et leurs hôtes par la protection des moyens d’existence pour une coexistence pacifique.
             </p>
             '
-            
+
     ];
     return view('content', compact('datas'));
 })->name('objectifs');
@@ -206,7 +209,7 @@ Route::get('sendMail', function () {
     Mail::send('email', compact('data'), function ($message) use ($to, $subject) {
     $message->to($to)->subject($subject);
 });
-    
+
     return "Send success";
 });
 
@@ -225,15 +228,18 @@ Route::resource('/dashboard/projet', ProjetController::class);
 Route::resource('/dashboard/activite', ActiviteController::class);
 Route::resource('/dashboard/actualite', ActualiteController::class);
 Route::resource('/dashboard/participant', ParticipantController::class);
+Route::resource('/dashboard/agents', AgentController::class);
+Route::resource('/dashboard/partenaires', PartenaireController::class);
+Route::resource('/dashboard/newsletters', NewsletterController::class);
 
 Route::get('{id}', function () {
     $datas = [
         "class" => "bi-exclamation-triangle",
         "title" => "Temporairement indisponible",
         "content" => ""
-        
+
         /*"title" => "Page non trouvée",
-        "content" => "Nous sommes désolés, la page que vous avez recherchée n'existe pas sur notre site Web ! 
+        "content" => "Nous sommes désolés, la page que vous avez recherchée n'existe pas sur notre site Web !
         Allez peut-être sur notre page d'accueil ou essayez d'utiliser une recherche ?"*/
     ];
     return view('content', compact('datas'));

@@ -78,9 +78,21 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('rapports')}}">
+                <a class="nav-link collapsed" href="{{route('newsletters.index')}}">
                     <i class="bi bi-journal-text"></i>
-                    <span>Rapports</span>
+                    <span>Newsletters</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('partenaires.index')}}">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Partenaires</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('agents.index')}}">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Agents</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -106,8 +118,8 @@
                     </div>
                 </div>
             </li>
-            
-            <li class="nav-item">
+
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('paiement')}}">
                     <i class="bi bi-credit-card-fill"></i>
                     <span>Paiements</span>
@@ -133,40 +145,19 @@
                     <span>Paramètres</span>
                 </a>
             </li>
-            <!--li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Paiements</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li-->
 
-            <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
             <div class="sidebar-heading">
                 Mon Compte
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('mon-tdb')}}">
                     <i class="bi bi-house-door-fill"></i>
                     <span>Accueil</span>
                 </a>
             </li>
-            <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="{{route('taches')}}">
                     <i class="fas fa-clipboard-list fa-2x"></i>
@@ -187,7 +178,7 @@
                     <i class="bi bi-journal-text"></i>
                     <span>Mes rapports</span></a>
             </li>
-            
+
             <li class="nav-item">
                 <a class="nav-link" href="{{route('carburant.index')}}">
                     <svg class="d-inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
@@ -195,33 +186,18 @@
                       </svg>
                     <span>Carburants</span></a>
             </li>
-            
-            <li class="nav-item">
+
+            <li-- class="nav-item">
                 <a class="nav-link" href="{{route('mes-paiements')}}">
                     <i class="bi bi-credit-card-fill"></i>
                     <span>Mes paiements</span></a>
-            </li>
-            <!-- Nav Item - Tables -->
-            <!--li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
             </li-->
 
-            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-            <!-- Sidebar Message -->
-            <!--div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>AMR Monde Rural</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div-->
 
         </ul>
         <!-- End of Sidebar -->
@@ -457,7 +433,7 @@
     </a>
 
     <!-- Déconnection Modal-->
-    
+
 
     <div class="modal fade" id="logoutModal">
         <div class="modal-dialog">

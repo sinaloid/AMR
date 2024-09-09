@@ -102,10 +102,15 @@
                         d’activités à savoir:
 
                     </p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>La gouvernance locale, de la décentralisation et des droits humains (GovLoc)</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Le genre et l’inclusion sociale (Santé communautaire – ANJE- / Empowerment des femmes, entreprenariat des jeunes) (G.I.S.)</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Les systèmes alimentaires durables (agroécologie, foncier, environnement et changements climatiques ; plaidoyer pour la nutrition et le WASH) (S.A.D.)</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>L’humanitaire, l’urgences et la cohésion sociale (Do No Harm, Leaving No One Behind) (H.U.CO.S.)</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>La gouvernance locale, de la décentralisation et
+                        des droits humains (GovLoc)</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Le genre et l’inclusion sociale (Santé
+                        communautaire – ANJE- / Empowerment des femmes, entreprenariat des jeunes) (G.I.S.)</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Les systèmes alimentaires durables
+                        (agroécologie, foncier, environnement et changements climatiques ; plaidoyer pour la nutrition et le
+                        WASH) (S.A.D.)</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>L’humanitaire, l’urgences et la cohésion sociale
+                        (Do No Harm, Leaving No One Behind) (H.U.CO.S.)</p>
                     @guest
                         <button class="btn btn-primary rounded-pill py-3 px-5 mt-3" data-bs-target="#adhesionForm"
                             data-bs-toggle="modal">Devenir Membre</button>
@@ -125,184 +130,23 @@
                 <h1>Ils nous font confiance</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/ambf.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
+                @php
+                    $partenaires = App\Models\Partenaire::where('is_delete', false)->get();
+                @endphp
+                @foreach ($partenaires as $item)
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid mx-auto mb-4" src="{{ asset($item->image) }}"
+                            style="width: 200px; height: 200px;">
+                        <div class="testimonial-text rounded text-center p-4">
 
-                        <p>
-                            L’Association des Municipalités du Burkina Faso, elle travaille à contribuer au renforcement de
-                            la décentralisation et à la promotion de la bonne gouvernance.
-                        </p>
-                        <h5 class="mb-1">AMBF</h5>
-                        <!--span class="fst-italic">Profession</span-->
+                            <p>
+                                {!! $item->description !!}
+                            </p>
+                            <h5 class="mb-1">{{$item->nom}}</h5>
+                            <!--span class="fst-italic">Profession</span-->
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/delen.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Delen</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/diakonia.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Diakonia</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/expertise.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Expertise France</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/care.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Care</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/chemonics.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Chemonics</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/creative.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">CREATIVE</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/fonaenf.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">FONAENF</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/hunger.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">The Hunger Project</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/idlo.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">IDLO</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/jatur.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">JATUR</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/mondial.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">PAM</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/fao.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">FAO</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/pnud.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">PNUD</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light mx-auto mb-4" src="{{ asset('assets/img/pt/proget.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Progettomondo.mlal</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid mx-auto mb-4" src="{{ asset('assets/img/pt/semus.png') }}"
-                        style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SEMUS</h5>
-                        <!--span class="fst-italic">Profession</span-->
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -353,8 +197,9 @@
                             Découvrir les actions de l' AMR pour les:
                         </p>
                         <h4 class="mb-3">
-                            Les systèmes alimentaires durables (agroécologie, foncier, environnement et changements climatiques ;
-            plaidoyer pour la nutrition et le WASH) (S.A.D.)
+                            Les systèmes alimentaires durables (agroécologie, foncier, environnement et changements
+                            climatiques ;
+                            plaidoyer pour la nutrition et le WASH) (S.A.D.)
                         </h4>
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
@@ -372,7 +217,7 @@
                         <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Lire plus</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -444,10 +289,10 @@
                     </div>
                 </div>
                 <!--div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                                                        <div class="position-relative h-100">
-                                                            <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
-                                                        </div>
-                                                    </div-->
+                                                                <div class="position-relative h-100">
+                                                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assets/img/amr-action.jpg') }}" style="object-fit: cover;" alt="">
+                                                                </div>
+                                                            </div-->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="owl-carousel header-carousel" style="max-height: 500px;">
                         <div class="owl-carousel-item position-relative">
@@ -561,540 +406,22 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                @php
+                    $agents = App\Models\Agent::where('is_delete', false)->get();
+                @endphp
+                @foreach ($agents as $item)
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/2.jpg') }}" style="width: 200px; height: 200px;">
+                        src="{{ asset($item->image) }}" style="width: 200px; height: 200px;">
                     <div class="testimonial-text rounded text-center p-4">
                         <p>
-                            Accompagner les groupes vulnérables en leur donnant les moyens d’expression citoyenne a été pour
-                            moi une expérience riche d’émotions, mais aussi de fierté et d’espoir car un monde meilleur est
-                            toujours possible !
-                            WANGRE Amadou, Coordonnateur National AMR Burkina
+                            {!!$item->description!!}
                         </p>
-                        <h5 class="mb-1">WANGRE Amadou</h5>
-                        <span class="fst-italic">Coordonnateur National <br />Sociologue</span>
+                        <h5 class="mb-1">{{$item->nom}}</h5>
+                        <span class="fst-italic">{{$item->post_occupe}}</span>
                     </div>
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/1.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">WOROKUY David Seth</h5>
-                        <span class="fst-italic">Directeur de Programme <br /> Juriste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/3.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SABO / RAMDE W. Félicité</h5>
-                        <span class="fst-italic">Directeur des Affaires Administratives et Financières
-                            <br>Economiste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/4.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SAVADOGO Hassane
-                        </h5>
-                        <span class="fst-italic"> Assistant Méthodologique <br>Administrateur Civil</span>
-                    </div>
-                </div>
-                
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/6.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">KABORE W Claude Bonaventure</h5>
-                        <span class="fst-italic">Chargé de Suivi évaluation – Capitalisation et apprentissage
-                            <br>Sociologue</span>
-                    </div>
-                </div>
-
-                
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/43.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Rasmané</h5>
-                        <span class="fst-italic">Chef Comptable</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/8.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Zoenaba</h5>
-                        <span class="fst-italic">Comptable</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/9.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis NEYA T Charlotte, Assistante Comptable à l'Association Monde Rural et chargée d'appuyer
-                            la Directrice des affaires
-                            administratives et financières dans la bonne gestion des activités selon le manuel de procédure
-                            de la structure.
-                            J'ai rejoint AMR pour mettre mon expertise à son profit et lui permettre d’être plus
-                            opérationnelle.
-                        </p>
-                        <h5 class="mb-1">NEYA Téné Charlotte</h5>
-                        <span class="fst-italic">Assistante Comptable</span>
-                    </div>
-                </div>
-                
-                
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/12.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je me nomme OUEDRAOGO W Paul, juriste et spécialiste en intermédiation sociale. Je possède une
-                            expertise en sécurité alimentaire et protection des moyens d’existences des vulnérables.
-                            J’ai rejoint l’AMR dans le seul souci de réaliser une ambition : contribuer à soulager la misère
-                            des populations vulnérables et celles affectées par les différents chocs et l’extrême pauvreté.
-
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO W. Paul</h5>
-                        <span class="fst-italic">Spécialiste en mobilisation sociale Chargé de Cohésion Sociale <br />
-                            Juriste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/13.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis OUEDRAOGO Ouahabou, géographe de formation et chargé de projet Gouvernance Locale à
-                            l’AMR. Epousant la philosophie de l’AMR et convaincu que le développement réel viendrait de la
-                            base, voilà ce qui m’a séduit et à choisir AMR pour apporter ma touche au bien-être des
-                            populations rurales
-                            Contribuer à faire de l’AMR l’une des meilleures structures en matière de promotion de la
-                            gouvernance locale.
-
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Ouahabou</h5>
-                        <span class="fst-italic">Chargé projet Gouvernance Locale <br> Géographe – Gestionnaire de
-                            projets</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/14.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <P>
-                            Je suis KARAMBIRI Céline. Je suis sociologue de formation avec pour option Dynamique Locale. Je
-                            suis experte en mobilisation communautaire.
-                            J’ai rejoint l’AMR dans le but de mettre en pratique les connaissances acquises à la base
-                            surtout dans le monde communautaire en matière de sensibilisation. Je suis en contact direct
-                            avec le monde communautaire afin de leur apporter du soutien ce qui leur permettra d'opérer de
-                            nouvelles connaissances en matière de santé.
-
-                        </P>
-                        <h5 class="mb-1">KARAMBIRI Céline</h5>
-                        <span class="fst-italic">Superviseur Projet Santé Communautaire <br>Sociologue</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/15.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">KOANDA Bertille</h5>
-                        <span class="fst-italic">Chargée R2G & Plaidoyer<br>Communicatrice</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/16.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis ZOROME Arouna, Chef de mission Third-Party Monitoring (TPM). Je suis Ingénieur
-                            Statisticien Environnementaliste.
-                            Ma mission au sein de l’AMR est de coordonner l’ensemble des activités TPM et de répondre aux
-                            différentes sollicitations de ma hiérarchie.
-                            Le TPM au Burkina Faso étant une nouvelle démarche promue par notre partenaire le PAM,
-                            j’ambitionne de faire de l’AMR, la référence TPM dans la sous région.
-                        </p>
-                        <h5 class="mb-1">ZOROME Arouna</h5>
-                        <span class="fst-italic">Spécialiste en Suivi évaluation <br>Statisticien - Data analyste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/17.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Accompagner les femmes rurales pour leur autonomisation à travers l’accès aux crédit par la
-                            facilitation des Associations villageoises d’épargne et de crédits à été une expérience très
-                            riche et un sentiment de fierté pour moi, car les femmes arrivent a constituer de façon locale
-                            leur fonds de crédit qui leurs permet d’accéder au crédits à des conditions souples pour
-                            développer leurs moyens d’existences. SANOU Brigitte, Superviseur de programme AMR Burkina
-                        </p>
-                        <h5 class="mb-1">SANOU Brigitte</h5>
-                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Boucle du Mouhoun - Nord</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/18.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Être en contact permanent avec les communautés vulnérables et s’assurer que toute personne
-                            vulnérable qui est bénéficiaire reçoit une assistance alimentaire en qualité et quantité qui lui
-                            ai dû. Voici ceux à quoi je me suis attaché et qui me donnent une entière satisfaction
-                            Nissoma Waouaga Abdel Marcelin ZONGO Superviseur de projet à AMR-BURKINA
-
-                        </p>
-                        <h5 class="mb-1">ZONGO Marcellin</h5>
-                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Sahel Burkina</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/19.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SAVADOGO Mahamady</h5>
-                        <span class="fst-italic">Superviseur mission AMR-PAM <br>Centre-Nord Burkina</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/20.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">RIBOU Sébastien</h5>
-                        <span class="fst-italic">Superviseur mission AMR-PAM<br>Est Burkina</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/21.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis OUEDRAOGO Hamed, j’ai un niveau de licence 2 en science économique et de gestion, mon
-                            aventure dans le milieu humanitaire à débuter en 2021 dans une ONG comme animateur dans le
-                            projet de résilience. Par la suite J’ai été chef de chantier dans le projet filet sociaux/BNS et
-                            enfin j’ai été Promoteur dans projet « Amélioration du service eau, assainissement au profit de
-                            la population du Liptako Gourma, commune de Dori ».
-                            Pour moi travailler dans une structure comme l’AMR, en qualité de technicien intercommunal me
-                            permettra de pouvoir œuvrer au profit des communautés en proie aux multiples vicissitudes de la
-                            vie dans ce contexte d’insécurité grandissante.
-                            Mes différentes expériences professionnelles, ma disponibilité, mon sens du devoir sont entre
-                            autres des atouts que j’aimerais mettre à la disposition de la structure pour l’atteinte de ses
-                            objectifs et parallèlement me permettre de mieux comprendre le monde humanitaire et d’apporter
-                            de justes et idoines réponses.
-
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Hamed</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/22.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <P>
-                            Je suis Ouédraogo Cyr Wendwaoga, juriste. J’ai rejoint AMR parce qu’étant à la recherche de
-                            nouvelles opportunités d’expression professionnelles qui me permettront de progresser de
-                            valoriser et me mettre à profit mes expériences. En tant que technicien intercommunal, je serai
-                            en contact permanent avec les communautés rurales que j’admire tant. Cette position me
-                            facilitera d’œuvre à la notoriété de la structure et à l’atteinte des buts et objectifs.
-                        </P>
-                        <h5 class="mb-1">OUEDRAOGO Cyr Wendwaoga</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/23.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Je suis Ouédraogo Nazemsé Honoré, diplômé en science économique et de gestion, j’ai une
-                            expérience dans le domaine humanitaire et une bonne
-                            connaissance du milieu rural.
-                            A AMR, je suis un agent terrain afin de l’accompagner dans l’atteinte de ses objectifs.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Nazemsé Honoré</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/24.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Je suis CONGO Natacha, technicienne intercommunale de l’Association Monde Rural, et je sers de
-                            relais entre l’AMR et le monde communautaire
-                            De contact facile, flexible et adaptative, j’ai rejoint l’AMR pour contribuer à l’épanouissement
-                            du monde communautaire.
-                            Mes ambitions pour l’organisation c’est de construire un monde meilleur, de paix avec les
-                            approches et stratégies d’AMR pour l’atteinte de ses objectifs.
-                        </p>
-                        <h5 class="mb-1">CONGO Natacha</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/25.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SAVADOGO Sayouba</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/26.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Saidou</h5>
-                        <span class="fst-italic">Assistant de sécurité <br />Service d’appui</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/27.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BANGRE Mahamoudou</h5>
-                        <span class="fst-italic">Membre d’Honneur <br />Ancien Président</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/28.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis François MANDZABA, Technicien Inter Communal à AMR.Je suis aux côtés des communautés,
-                            rurales surtout pour des actions de sensibilisations
-                            pour l'éveil des consciences afin de susciter un engagement de celles-ci dans la marche pour le
-                            développement de leur communauté. Je participe à la
-                            recherche de solutions et d'accompagnement pour répondre aux problèmes de ces communautés.
-                            J'ai rejoint AMR car j'ai toujours voulu apporter ma contribution pour le bien être des
-                            communautés rurales. AMR est un cadre idéal pour moi donc
-                            de pouvoir accomplir ce rêve.
-                        </p>
-                        <h5 class="mb-1">MANDZABA François</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/29.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SIENOU Adama</h5>
-                        <span class="fst-italic">Technicien Inter Communal <br />Géographe</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/30.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">ZONGO Hamidou</h5>
-                        <span class="fst-italic">Technicien Inter Communal</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/31.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Inoussa</h5>
-                        <span class="fst-italic">Assistant de sécurité <br />Service d’appui</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/32.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SIGUE Adama</h5>
-                        <span class="fst-italic">Agent de conduite <br />Service d’appui</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/33.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">SAMANDOULOUGOU Lockre Célestin</h5>
-                        <span class="fst-italic">Président du Conseil d’Administration <br />Economiste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/34.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUMSAORE N Gaston</h5>
-                        <span class="fst-italic">Président du Comité National de
-                            Contrôle et de Vérification <br>Auditeur Comptable</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/35.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BANGRE K André</h5>
-                        <span class="fst-italic">Président du Comité National de
-                            Plaidoyer et d’Orientation Stratégique <br />Economiste</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/44.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">OUEDRAOGO Faty</h5>
-                        <span class="fst-italic">Femme de ménage
-                            <br /> Service d’appui</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/36.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis SAVADOGO Abdoulaye, sociologue de formation et membre fondateur de l'AMR
-                            Je veux contribuer avec les autres membres de l'AMR à renforcer les capacités des populations
-                            rurales pour qu'elles participent pleinement aux actions de développement.
-                            En tant que directeur de la vie associative, je veille à ce que la mise en œuvre des projets et
-                            programmes ne fasse pas oublier les activités régaliennes de l'association.
-                            Pour AMR, je veux une structure capable de renforcer les capacités de toutes les communes du
-                            Burkina Faso en particulier et de l’Afrique en général.
-
-                        </p>
-                        <h5 class="mb-1">SAVADOGO Abdoulaye</h5>
-                        <span class="fst-italic">Directeur de la Vie Associative</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/37.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">Kiemde Abdoul Aziz</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Zondoma <br> Spécialiste en éducation</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/38.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BALOUM François</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Sanematenga <br>Spécialiste en
-                            éducation</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/39.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BAYILI Joseph</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Boulkiemdé <br>Spécialiste en éducation</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/40.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">BANDAOGO Roland Samy</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Boulgou <br>Spécialiste en éducation</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/41.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut
-                            diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
-                        </p>
-                        <h5 class="mb-1">LOMPO Alassane</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Gourma <br>Spécialiste en éducation</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
-                        src="{{ asset('assets/img/membres/42.jpg') }}" style="width: 200px; height: 200px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>
-                            Je suis Bazyomo Martial Richard, point focal de l’AMR a Réo dans la province du Sanguié.
-                            Je suis animateur, collecteur de données également.
-                            J’aime le travail sur le terrain, la vie en société et les interactions avec la communauté
-                            rurale.
-
-                        </p>
-                        <h5 class="mb-1">BAZyOMO Martial Richard</h5>
-                        <span class="fst-italic">Coordonnateur Provincial du Sanguié <br>Spécialiste en éducation</span>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
