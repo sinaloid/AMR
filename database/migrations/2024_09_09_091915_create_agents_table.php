@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string("nom");
             $table->string("post_occupe");
             $table->string("slug");
+            $table->string("type");
             $table->string("image");
             $table->longText("description");
             $table->boolean("is_delete")->default(0);

@@ -129,6 +129,7 @@
                                                                 placeholder="Entrer le poste occupé" name="post_occupe"
                                                                 value="{{ $data->post_occupe }}">
                                                         </div>
+                                                        <input name="type" value="agent" hidden />
 
 
                                                         <div class="mb-3">
@@ -224,6 +225,7 @@
                             <label for="post_occupe" class="form-label">Poste occupé</label>
                             <input type="text" class="form-control" id="post_occupe"
                                 placeholder="Entrer le poste occupé" name="post_occupe">
+                                <input name="type" value="agent" hidden />
                         </div>
 
                         <div class="mb-3">

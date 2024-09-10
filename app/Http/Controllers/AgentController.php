@@ -20,9 +20,33 @@ class AgentController extends Controller
     public function index()
     {
 
-        $datas = Agent::where('is_delete', false)->orderByDesc('id')->get();
+        $datas = Agent::where([
+            'is_delete' => false,
+            'type' => "agent"
+        ])->orderByDesc('id')->get();
         return view('dashboard.agent', compact("datas"));
     }
+
+    public function membre()
+    {
+
+        $datas = Agent::where([
+            'is_delete' => false,
+            'type' => "membre"
+        ])->orderByDesc('id')->get();
+        return view('dashboard.agent_membre', compact("datas"));
+    }
+
+    public function equipe()
+    {
+
+        $datas = Agent::where([
+            'is_delete' => false,
+            'type' => "equipe"
+        ])->orderByDesc('id')->get();
+        return view('dashboard.agent_equipe', compact("datas"));
+    }
+
 
 
     /**
@@ -48,6 +72,7 @@ class AgentController extends Controller
         //dd($request->all());
         $validator = Validator::make($request->all(), [
             'nom' => 'required|string|max:255',
+            'type' => 'required|string|max:255',
             'post_occupe' => 'required|string|max:255',
             'slug' => 'required|string|max:8',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:10240',
@@ -70,6 +95,7 @@ class AgentController extends Controller
             // Créer la nouvelle catégorie de média
             $data = Agent::create([
                 "nom" => $request['nom'],
+                "type" => $request['type'],
                 "post_occupe" => $request['post_occupe'],
                 "slug" => $request['slug'],
                 "image" => 'images/' . $imageName,
@@ -115,6 +141,7 @@ class AgentController extends Controller
 
         $validator = Validator::make($request->all(), [
             'nom' => 'required|string|max:255',
+            'type' => 'required|string|max:255',
             'post_occupe' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'description' => 'required|string|max:100000',
@@ -126,6 +153,7 @@ class AgentController extends Controller
 
         $agent->update([
             "nom" => $request['nom'],
+            "type" => $request['type'],
             "post_occupe" => $request['post_occupe'],
             "description" => $request['description'],
         ]);

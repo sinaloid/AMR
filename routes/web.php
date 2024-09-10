@@ -218,6 +218,9 @@ Route::get('/dashboard/membres', [PersonnelController::class, 'membres'])->name(
 Route::post('/dashboard/membres', [PersonnelController::class, 'create'])->name('createPersonnel');
 Route::get('/dashboard/deletePersonnel/{slug}', [PersonnelController::class, 'deletePersonnel'])->name('deletePersonnel');
 
+Route::get('/dashboard/equipe-operationnelle', [AgentController::class, 'equipe'])->name('equipeOpera');
+Route::get('/dashboard/membre', [AgentController::class, 'membre'])->name('membreAgent');
+
 //Route::post('/adhesion', [AdhesionController::class, 'create'])->name('createAdhesion');
 Route::get('/dashboard/deleteAdherent/{slug}', [AdhesionController::class, 'deleteAdherent'])->name('deleteAdherent');
 Route::get('/dashboard/adhesion', [AdhesionController::class, 'adhesion'])->name('adherents');

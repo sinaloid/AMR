@@ -96,6 +96,24 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('membreAgent')}}">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Membres</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('equipeOpera')}}">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Equipe opérationnelle</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('membres')}}">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Administrateur</span>
+                </a>
+            </li>
+            <!--li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="bi bi-people-fill"></i>
@@ -109,15 +127,12 @@
                             <span>Adhérents</span>
                         </a>
                         <a class="collapse-item" href="{{route('membres')}}">
-                            <span>Membres</span>
+                            <span>Administrateur</span>
                         </a>
-                        <a class="collapse-item" href="{{route('personnel')}}">
-                            <span>Agents</span></a>
-                            <a class="collapse-item" href="{{route('partenaires')}}">
-                                <span>Partenaires</span></a>
+
                     </div>
                 </div>
-            </li>
+            </li-->
 
             <!--li class="nav-item">
                 <a class="nav-link collapsed" href="{{route('paiement')}}">
